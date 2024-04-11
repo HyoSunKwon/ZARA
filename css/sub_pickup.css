@@ -73,28 +73,8 @@ body{line-height: 1.5; color: var(--mainfont);
 h1,h2,h3,h4,h5,h6{line-height: 1;}
 
 .serif{font-family: 'DM Serif Display', serif; font-weight: 400; line-height: 1;}
-/* .tab_btn{}
-.tab_line_btn{}
-.more_btn{}
-.top_btn{}
-.hart_btn{}
-.close_btn{}
-.back_btn{}
-.form_btn{}
-.checkbox{}
-.plus_btn{}
-.minus_btn{}
-.buy_btn_wrap{}
-.buy_btn{}
-.wishi_btn{}
-.form_change{}
-.page_nation{}
-.h2_txt{}
-.tit_txt{} */ 
-/*자바 클래스*/
 
 /*메인 비주얼*/
-/* #contents{padding-top: 110px;} */
 #contents .pick_wrap{background: #fff;}
 #contents .pick_wrap .visual_wrap{background: var(--zaraora); width: 100%;text-align: center;height: 100%;}
 #contents .top_txt{text-align: center; color: #fff;}

@@ -168,7 +168,6 @@
 
         emailList.addEventListener("change", function () {
             
-            // document.querySelector("body").style.overflowX="visible"
             if (emailList.value === "직접입력") {
                 emailSel.innerHTML = "";
 
@@ -178,7 +177,6 @@
                 customEmailInput.style.fontSize="16px";
                 customEmailInput.style.color="#040404";
 
-                // input 이벤트 대신 change 이벤트를 사용합니다.
                 customEmailInput.addEventListener("change", function () {
                     emailSel.textContent = '@' + '\u2002' + customEmailInput.value;
                 });
@@ -194,8 +192,6 @@
         
 
         btnConfirm.addEventListener("click",function(event){
-            // button type "submit" 특성 때문에 이벤트 제어 함수를 넣어줌
-            // 여기서 생각 할 수 있는점 -> 이벤트 제어를 하지 않으면 서버로 데이터가 전송되면서 웹페이지가 다시 로드되어 'new_join_complet.html'가 묻히게됨
             event.preventDefault();
             if(userId.value &&
                userPw.value &&
@@ -234,92 +230,6 @@
             })
         })
         
-
-        // btnConfirm.addEventListener("input",color)
-
-        // function color(){
-        //     if(userId.value && userPw.value && userPw2.value){
-        //         btnConfirm.style.backgrounColor="#321B14";
-        //     }
-            
-        // }
-
-
-        // ★확인 버튼을 눌렀을때 빈 칸으로 포커스가 이동하며 알림창이 뜨는 스크립트
-            //         btnConfirm.addEventListener("click", function (event) {
-            //     // button type "submit" 특성 때문에 이벤트 제어 함수를 넣어줌
-            //     // 여기서 생각 할 수 있는점 -> 이벤트 제어를 하지 않으면 서버로 데이터가 전송되면서 웹페이지가 다시 로드되어 'new_join_complet.html'가 묻히게됨
-            //     event.preventDefault();
-
-            //     // 유효성 검사 및 포커스 설정
-            //     if (!userId.value) {
-            //         alert("아이디를 입력하세요.");
-            //         userId.focus(); // 아이디 필드로 포커스 이동
-            //     } else if (!userPw.value) {
-            //         alert("비밀번호를 입력하세요.");
-            //         userPw.focus(); // 비밀번호 필드로 포커스 이동
-            //     } else if (!userPw2.value) {
-            //         alert("비밀번호 확인을 입력하세요.");
-            //         userPw2.focus(); // 비밀번호 확인 필드로 포커스 이동
-            //     } else {
-            //         // 모든 조건이 충족되면 페이지 이동
-            //         location.href = 'new_join_complet.html';
-            //     }
-            // });
-
-        
-        // ★위에 작동되고 있는 click 이벤트의 다른 작업 방법
-            // function confirm() {
-            //     // 조건이 충족되면 페이지 이동
-            //     if (userId.value && userPw.value && userPw2.value) {
-            //         // 페이지 이동
-            //         location.href = 'new_join_complet.html';
-            //     }};
-
-            // // 버튼 클릭 시 confirm 함수 호출
-            // btnConfirm.addEventListener("click", confirm);
-
-            // const form = document.querySelector("form");
-            // form.addEventListener("submit", function (event) {
-            //     event.preventDefault(); // 기본 동작 취소
-            //     confirm(); // 폼 제출 대신 confirm 함수 호출
-            // });
-
-
-        // ★정보를 모두 입력하지 않으면 알림창이 뜨며 페이지 이동이 안되는 식
-            // 정보를 모두 작성해주세요 자바스크립트
-            // function confirm() {
-            //     // 조건이 충족되면 페이지 이동
-            //     if (!(userId.value && userPw.value && userPw2.value)) {
-            //         alert("정보를 모두 작성해주세요.");
-            //     } else {
-            //         // 페이지 이동
-            //         location.href = 'new_join_complet.html';
-            //     }};
-
- 
-        // ★조건이 맞지 않으면 버튼이 비활성호ㅘ되며 조건이 맞을때 버튼이 활성화되며 컬러가 바뀌는 식
-            // function next() {
-                    // disabled은 비활성화가 true값임
-            //     // userId와 userPw의 값을 이용하여 논리 연산을 수행
-            //     // 만약 userId와 userPw 중 하나라도 값이 비어있다면 true가 되고,
-            //     // 둘 다 값이 존재하면 false가 됨
-            //     btnConfirm.disabled = !(userId.value && userPw.value && userPw2.value);
-
-            //     // 버튼이 활성화된 경우
-            //     if (!btnConfirm.disabled) {
-            //         btnConfirm.style.backgroundColor = '#321B14'; // 원하는 배경색으로 변경
-            //         btnConfirm.style.color = 'white'; // 원하는 텍스트 색상으로 변경
-            //     } else {
-            //         // 버튼이 비활성화된 경우
-            //         btnConfirm.style.backgroundColor = '#757575'; // 원하는 배경색으로 변경
-            //         btnConfirm.style.color = 'white'; // 원하는 텍스트 색상으로 변경
-            //     }};
-
-            // userId.addEventListener("keyup", next);
-            // userPw.addEventListener("keyup", next);
-            // userPw2.addEventListener("keyup", next);
-
     </script>
 
 

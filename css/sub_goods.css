@@ -70,25 +70,6 @@ body{line-height: 1.5; color: var(--mainfont);
 h1,h2,h3,h4,h5,h6{line-height: 1;}
 .str{font-weight: 700;}
 .serif{font-family: 'DM Serif Display', serif; font-weight: 400;}
-/* .tab_btn{}
-.tab_line_btn{}
-.more_btn{}
-.top_btn{}
-.hart_btn{}
-.close_btn{}
-.back_btn{}
-.form_btn{}
-.checkbox{}
-.plus_btn{}
-.minus_btn{}
-.buy_btn_wrap{}
-.buy_btn{}
-.wishi_btn{}
-.form_change{}
-.page_nation{}
-.h2_txt{}
-.tit_txt{} */ 
-/*자바 클래스*/
 
 /*메인 비주얼*/
 #contents{padding-top: 110px;}
@@ -119,7 +100,6 @@ h1,h2,h3,h4,h5,h6{line-height: 1;}
                                                 top: 50%; left: 0;}
 #contents .plus_tab_wrap .button_wrap .plus_line2{transform: rotate(90deg);
                                                 transition: 0.3s;}
-/* #contents .plus_tab_wrap .button_wrap.on{display: ;} */
 #contents .plus_tab_wrap .button_wrap.on+ .tab_wrap{display: blocK;}
 #contents .plus_tab_wrap .button_wrap.on .plus_line2{transform: rotate(0); background: var(--line)}
 /*혼용률 박스*/

@@ -729,7 +729,6 @@
 
         let btn=document.querySelectorAll(".button_wrap")
         let btnTxt=document.querySelectorAll(".tab_wrap")
-        // console.log(btn)
 
         // 버튼 클릭 자바스크립트
 
@@ -747,29 +746,19 @@
                 
             })
         }
-        // for(let i=0; i<btn.length; i++){
-        //     btn[i].addEventListener("click",function(){
-        //         for(let k=0; k<btnTxt.length; k++){
-        //             btnTxt[k].classList.remove("on")
-                   
-        //         }
-        //         btnTxt[i].classList.add("on")
-        //             console.log(btn)
-        //     })  
-        // }
 
         let hartClick=document.querySelector(".hart")
         let hartOn=true
 
         hartClick.addEventListener("click",function(){
-    if(hartOn===true){
-        hartClick.setAttribute("src","./images/common/fullhart.svg")
-        hartOn=false
-    }else{
-        hartClick.setAttribute("src","./images/common/goodshart.svg")
-        hartOn=true
-    }
-})
+            if(hartOn===true){
+                hartClick.setAttribute("src","./images/common/fullhart.svg")
+                hartOn=false
+            }else{
+                hartClick.setAttribute("src","./images/common/goodshart.svg")
+                hartOn=true
+            }
+        })
     </script>
 </body>
 </html>

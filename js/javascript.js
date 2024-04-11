@@ -9,17 +9,14 @@ const topnone=document.querySelector(".top_btn")
 open.addEventListener("click",function(){
     nav.classList.add("on")
     document.querySelector("body").style.overflowY="hidden"
-    // topnone.classList.add("on")
 })
 close.addEventListener("click", function(){
     nav.classList.remove("on")
     document.querySelector("body").style.overflowY="auto"
-    // topnone.classList.remove("on")
 })
 
 const minus=document.querySelector(".plus_btn")
 const onedepth=document.querySelectorAll(".onedepth")
-// console.log(onedepth)
 for(let n=0; n<onedepth.length; n++){
     onedepth[n].addEventListener("click", function(){
         if(onedepth[n].classList.contains("on")===false){
@@ -41,7 +38,6 @@ const btnTop=document.querySelector("#top")
 
 window.addEventListener("scroll", function(){
     let top=window.scrollY
-    // console.log(top)
     if(top>300){
         btnTop.classList.add("active")
     }else{
@@ -53,7 +49,6 @@ btnTop.addEventListener("click", function(){
     window.scrollTo({top:0, behavior:"smooth"})
 })
 
-// header serch_btn 자바스크립트
 const serchBtn=document.querySelector(".serch_btn")
 const serch=document.querySelector(".serch_page_wrap")
 const backBtn=document.querySelector(".back_btn_wrap")
@@ -84,7 +79,6 @@ for(let i=0; i<click.length; i++){
         for(let k=0; k<click.length; k++){
             click[k].classList.remove("on")
             this.classList.add("on")
-            // console.log(click)
         }
     })  
 }
@@ -130,7 +124,6 @@ for(let i=0; i<click.length; i++){
         for(let k=0; k<click.length; k++){
             click[k].classList.remove("on")
             this.classList.add("on")
-            // console.log(click)
         }
     })  
 }

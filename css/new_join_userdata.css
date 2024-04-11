@@ -78,7 +78,6 @@ h1,h2,h3,h4,h5,h6{line-height: 1;}
                                     padding-top: 15px;
                                     color: var(--subfont);
                                     position: relative;
-                                    /* width: 33.333333%; */
                                 }      
 #join .join_wrap .join_pagenation li:nth-child(1){padding-left: 20px;
                                                     text-align: left;
@@ -161,7 +160,6 @@ h1,h2,h3,h4,h5,h6{line-height: 1;}
                                                 padding-top: 15px;
                                                 color: var(--subfont);
                                                 position: relative;
-                                                /* width: 33.333333%; */
                                             }      
 #join #user_data .join_pagenation li:nth-child(1){padding-left: 20px;
                     text-align: left;
@@ -237,11 +235,6 @@ h1,h2,h3,h4,h5,h6{line-height: 1;}
                                                 height: 60px;
                                                 border: 1px solid var(--line);
                                                 padding: 20px 15px;}
-/* #join #user_data .user_data_wrap .set2 .flex_right{width: 100%;
-                                                height: 60px;
-                                                border: 1px solid var(--line);
-                                                padding: 20px 15px 15px;;
-                                                text-align: right;} */
 #join #user_data .user_data_wrap .set2 .email_box{width: calc(100%/2)}
 #join #user_data .user_data_wrap .set2 .email_select{display: block;
                                                     font-size: 16px;

@@ -85,26 +85,6 @@ body{line-height: 1.5;
     font-weight: 400;}
 h1,h2,h3,h4,h5,h6{line-height: 1;}
 
-/* .tab_btn{}
-.tab_line_btn{}
-.more_btn{}
-.top_btn{}
-.hart_btn{}
-.close_btn{}
-.back_btn{}
-.form_btn{}
-.checkbox{}
-.plus_btn{}
-.minus_btn{}
-.buy_btn_wrap{}
-.buy_btn{}
-.wishi_btn{}
-.form_change{}
-.page_nation{}
-.h2_txt{}
-.tit_txt{} */
-
-
 #header{position: fixed;
         overflow-y: auto;
         z-index: 9999;
@@ -161,7 +141,6 @@ h1,h2,h3,h4,h5,h6{line-height: 1;}
                         left: -100%;
                         top: 0;
                         z-index: 9999;  
-                        /* padding: 30px 0 0 0; */
                         transition: 0.3s;
                         padding: 45px 20px 30px;
                 }
@@ -338,7 +317,6 @@ h1,h2,h3,h4,h5,h6{line-height: 1;}
                                 justify-content: space-between;
                                 align-items: center;
                                 padding: 25px 20px;
-                                /* border-top: 1px solid var(--line); */
                                 border-bottom: 1px solid var(--line);
                             }
 #header .nav .gnb_inner .onedepth strong{color: var(--main);
@@ -400,7 +378,6 @@ h1,h2,h3,h4,h5,h6{line-height: 1;}
                         
 /* #header .nav 자바스크립트 css */
 #header .nav.on{left:0;}
-/* #header .top_btn.on{display: none;} */
 #header .nav .gnb_inner .onedepth.on+ .twodepth_wrap{display: block;}
 
 

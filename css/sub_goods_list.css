@@ -46,7 +46,6 @@ html{font-size: 10px;
                                             color: rgba(0,0,0,0.4);}
 #contents #goods_list .goods_list_wrap{display: none;}
 #contents #goods_list .goods_list_wrap.on{display: block;}
-/* #contents #goods_list .goods_list_wrap.on .item_list_area{display: block;} */
 
 #contents #goods_list .breadcrumb{font-size: 14px;
                                 color: var(--subfont);

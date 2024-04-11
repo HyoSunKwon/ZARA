@@ -19,7 +19,6 @@
                         </a>
                     </h1>
                 </div>
-                <!-- onclick="history.back() -->
                 <div class="left">
                     <a href="#" class="block history_back"> 
                         <div class="back_btn_wrap">
@@ -110,22 +109,21 @@
 
     <script>
 
-// 로그인페이지 자바스크립트
-let eye=document.querySelector(".eye_pic")
-let eyeOn=true
+        // 로그인페이지 자바스크립트
+        let eye=document.querySelector(".eye_pic")
+        let eyeOn=true
 
-eye.addEventListener("click",function(){
-    if(eyeOn===true){
-        eye.setAttribute("src","./images/common/eye02.png")
-        eyeOn=false
-    }else{
-        eye.setAttribute("src","./images/common/eye01.png")
-        eyeOn=true
-    }
-})
+        eye.addEventListener("click",function(){
+            if(eyeOn===true){
+                eye.setAttribute("src","./images/common/eye02.png")
+                eyeOn=false
+            }else{
+                eye.setAttribute("src","./images/common/eye01.png")
+                eyeOn=true
+            }
+        })
 
-
-        </script>
+    </script>
 
 
 
