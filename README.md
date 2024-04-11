@@ -35,7 +35,9 @@
 <h2>작업한 부분</h2>
 <h3>index</h3>
 <h4>메인페이지</h4>
-<p target="_blank" width="375" height="800">http://nyosun.dothome.co.kr/zara/index.html</p>
+<a href="http://nyosun.dothome.co.kr/zara/index.html"  target="_blank" width="375" height="800">
+  <p>http://nyosun.dothome.co.kr/zara/index.html</p>
+</a>
 <p>- header 햄버거메뉴(투댑스), 검색페이지, 로그인창 구현</p>
 <p>- main 비쥬얼&BEST SELLERS 스와이퍼 플러그인 사용, &BEST SELLERS 탭메뉴 구현 </p>
 
