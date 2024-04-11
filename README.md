@@ -35,31 +35,29 @@
 <h2>작업한 부분</h2>
 <h3>index</h3>
 <h4>메인페이지</h4>
-<a href="http://nyosun.dothome.co.kr/zara/index.html"  target="_blank" width="375" height="800">
-  <p>http://nyosun.dothome.co.kr/zara/index.html</p>
-</a>
+<p>http://nyosun.dothome.co.kr/zara/index.html</p>
 <p>- header 햄버거메뉴(투댑스), 검색페이지, 로그인창 구현</p>
 <p>- main 비쥬얼&BEST SELLERS 스와이퍼 플러그인 사용, &BEST SELLERS 탭메뉴 구현 </p>
 
 <h4>로그인창</h4>
-<p target="_blank">http://nyosun.dothome.co.kr/zara/new_login.html</p>
+<p>http://nyosun.dothome.co.kr/zara/new_login.html</p>
 <p>input태그를 이용한 로그인화면 구현</p>
 
 <h4>회원가입_본인인증/약관동의창</h4>
-<p target="_blank">http://nyosun.dothome.co.kr/zara/new_join.html</p>
+<p>http://nyosun.dothome.co.kr/zara/new_join.html</p>
 <p>체크박스 자바스크립트 사용하여 구현</p>
 
 <h4>회원가입_정보입력창</h4>
-<p target="_blank">http://nyosun.dothome.co.kr/zara/new_join_userdata.html</p>
+<p>http://nyosun.dothome.co.kr/zara/new_join_userdata.html</p>
 <p>폼 양식에 맞게 작성할 수 있도록 자바스크립트 구현</p>
 
 <h4>회원가입_가입완료창</h4>
-<p target="_blank">http://nyosun.dothome.co.kr/zara/new_join_complet.html</p>
+<p>http://nyosun.dothome.co.kr/zara/new_join_complet.html</p>
 <p>확실한 정보전달을 위한 아이콘과 가독성 좋은 폰트크기로 ui/ux를 고려한 디자인</p>
 
 <h3>sub_goods_list</h3>
 <h4>상품리스트</h4>
-<p target="_blank">http://nyosun.dothome.co.kr/zara/sub_goods_list.html</p>
+<p>http://nyosun.dothome.co.kr/zara/sub_goods_list.html</p>
 <p>- 23FW COLLECTION, BEST SELLERS 탭메뉴 구현</p>
 <p>- 상품 ♥찜하기 버튼 구현</p>
 <p>- 하단 페이지네이션 구현</p>
