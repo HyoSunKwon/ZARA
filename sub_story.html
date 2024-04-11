@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+    minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>ZARA</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub_story.css">
+
+</head>
+<body>
+    <header id="header">
+        <div class="header_fixed">
+            <div class="header_in header_inner">
+                <div class="logo">
+                    <h1>
+                        <a href="index.html">
+                            <img src="./images/common/logo.svg" alt="ZARA 메인페이지">
+                        </a>
+                    </h1>
+                </div>
+                <div class="left">
+                    <div class="menu_wrap">
+                        <div class="open_menu">
+                            <strong class="blind">메뉴열기</strong>
+                            <div class="btn_line_wrap">
+                                <span class="btn_line"></span>
+                                <span class="btn_line"></span>
+                                <span class="btn_line"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="serch_wrap">
+                            <div>
+                                <button type="button" class="serch_btn">
+                                    <img src="./images/common/serch.svg" alt="검색창">
+                                </button>
+                            </div>
+                            <div class="serch_page_wrap">
+                                <div class="row1">
+                                    <div class="back_btn">
+                                        <button type="button" class="back_btn_wrap">
+                                            <span class="icon_arrow"></span>
+                                        </button>
+                                    </div>
+                                    <div class="serch_page_right">
+                                        <div>
+                                            <form action="#">
+                                                <fieldset>
+                                                    <legend class="blind">검색창</legend>
+                                                    <div class="form_txt">
+                                                        <input type="text" class="input_box" placeholder="ZARA 23FW COLLECTION OPEN" title="ZARA 23FW COLLECTION OPEN">
+                                                    </div>
+                                                    <div class="input_serch_btn_wrap">
+                                                        <button type="submit" class="input_serch_btn">
+                                                            <img src="./images/common/serch_subfontcolor.svg" alt="검색 아이콘" class="serch_svg">
+                                                        </button>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div><!-- row1 end -->
+                                <div>
+                                    <div class="row2 bg">
+                                        <div class="row2_row space">
+                                            <strong class="tit">최근 검색어</strong>
+                                            <div class="more_delete">
+                                                <div class="close_btn_wrap">
+                                                    <p class="more_delete_btn">전체삭제</p>
+                                                    <div class="close_icon_wrap">
+                                                        <span class="close_icon"></span>
+                                                        <span class="close_icon"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="serch_list" id="delet">
+                                            <li>
+                                                <div>
+                                                    <div class="close_btn_wrap">
+                                                        <p>트렌치코트</p>
+                                                        <div class="close_icon_wrap">
+                                                            <strong class="blind">삭제하기</strong>
+                                                            <span class="close_icon"></span>
+                                                            <span class="close_icon"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <div class="close_btn_wrap">
+                                                        <p>경량패딩</p>
+                                                        <div class="close_icon_wrap">
+                                                            <strong class="blind">삭제하기</strong>
+                                                            <span class="close_icon"></span>
+                                                            <span class="close_icon"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <div class="close_btn_wrap">
+                                                        <p>향수</p>
+                                                        <div class="close_icon_wrap">
+                                                            <strong class="blind">삭제하기</strong>
+                                                            <span class="close_icon"></span>
+                                                            <span class="close_icon"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div><!-- row2 end-->
+                                    <div class="row3 bg">
+                                        <div class="row3_row">
+                                            <strong class="tit space">인기 검색어</strong>
+                                            <div class="best_serch">
+                                                <ul class="col1">
+                                                    <li>
+                                                        <a href="#">
+                                                            <p class="best">01 패딩</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <p class="best">02 트렌치코트</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <p class="best">03 니트</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <p>04 맨투맨</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <p>05 원피스</p>
+                                                        </a>
+                                                    </li>
+                                                </ul><!-- col1 end -->
+                                                <ul class="col2">
+                                                    <li>
+                                                        <a href="#">
+                                                            <p>06 팬츠</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <p>07 셔츠</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <p>08 티셔츠</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <p>09 자라홈</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <p>10 숄더백</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div><!-- best_serch end -->
+                                        </div>
+                                    </div><!-- row3 end-->
+                                    <div class="row4 bg">
+                                        <div class="row4_row space">
+                                            <strong class="tit">최근 본 상품</strong>
+                                            <div class="more_btn_wrap">
+                                                <a href="#" class="more_btn"><p>더보기</p>
+                                                    <div class="icon_open_wrap">
+                                                        <span class="icon_open"></span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="img_wrap">
+                                            <a href="sub_goods.html" class="img_list_1">
+                                                <i class="blind">워터프루프 패딩 점퍼</i>
+                                            </a>
+                                            <a href="#" class="img_list_2">
+                                                <i class="blind">트리콧 부클 스웨터</i>
+                                            </a>
+                                            <a href="#" class="img_list_3">
+                                                <i class="blind">비즈 숄더 백</i>
+                                            </a>
+                                        </div>
+                                    </div><!-- row4 end-->
+                                </div>
+                            </div><!-- serch_page_wrap end -->
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div>
+                        <div class="login_wrap">
+                            <a href="new_login.html" class="login_btn">
+                                <img src="./images/common/user.svg" alt="로그인창">
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="basket_wrap">
+                            <a href="#" class="basket_btn">
+                                <img src="./images/common/wishlist.svg" alt="장바구니">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div><!--header_in end-->
+            <div class="rine_banner_wrap">
+                <a href="new_join.html" class="rine_banner">회원 가입 후 첫 구매시 10% 할인</a>
+            </div>
+        </div><!-- header_fixed end -->
+        <div>
+            <nav class="nav">
+                <strong class="blind">내비게이션</strong>
+                <div class="inner">
+                    <div class="gnb_header">
+                        <div class="logo">
+                            <a href="index.html" class="logo_btn">
+                                <img src="./images/common/logo.svg" alt="자라 메인">
+                            </a>
+                        </div>
+                        <div class="close_wrap">
+                            <button type="button" class="close_btn">
+                                <strong class="blind">메뉴닫기</strong>
+                                <span class="close_line"></span>
+                                <span class="close_line"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gnb_inner">
+                    <ul class="gnb">
+                        <li>
+                            <div class="onedepth">
+                                <strong>WOMEN</strong>
+                                <div class="plus_btn">
+                                    <strong class="blind">WOMEN 서브 메뉴 열기</strong>
+                                    <span class="plus_line"></span>
+                                    <span class="plus_line"></span>
+                                </div>
+                            </div>
+                            <div class="twodepth_wrap">
+                                <ul class="twodepth">
+                                    <li>
+                                        <a href="sub_goods_list.html"><p>23FW COLLECTION</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>BEST SELLERS</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>NEW</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>아우터</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>탑</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>바텀</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>원피스 / 점프수트 / 수트</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>슈즈 / 백</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>액세서리</p></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li><!-- depth1 end -->
+                        <li>
+                            <div class="onedepth">
+                                <strong>MEN</strong>
+                                <div class="plus_btn">
+                                    <i class="blind">MEN 서브 메뉴 열기</i>
+                                    <span class="plus_line"></span>
+                                    <span class="plus_line"></span>
+                                </div>
+                            </div>
+                            <div class="twodepth_wrap">
+                                <ul class="twodepth">
+                                    <li>
+                                        <a href="#"><p>23FW COLLECTION</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>BEST SELLERS</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>NEW</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>아우터</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>탑</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>바텀</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>슈즈 / 백</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>액세서리</p></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li><!-- depth2 end -->
+                        <li>
+                            <div class="onedepth">
+                                <strong>KIDS</strong>
+                                <div class="plus_btn">
+                                    <i class="blind">KIDS 서브 메뉴 열기</i>
+                                    <span class="plus_line none"></span>
+                                    <span class="plus_line"></span>
+                                </div>
+                            </div>
+                            <div class="twodepth_wrap">
+                                <ul class="twodepth">
+                                    <li>
+                                        <a href="#"><p>0 ~ 6개월</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>0 ~ 18 개월</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>1 ~ 6세</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>6 ~ 14세</p></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li><!-- depth3 end -->
+                        <li>
+                            <div class="onedepth">
+                                <strong>ZARA HOME</strong>
+                                <div class="plus_btn">
+                                    <i class="blind">ZARA HOME 서브 메뉴 열기</i>
+                                    <span class="plus_line"></span>
+                                    <span class="plus_line"></span>
+                                </div>
+                            </div>
+                            <div class="twodepth_wrap">
+                                <ul class="twodepth">
+                                    <li>
+                                        <a href="#"><p>가구</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>데코</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>침실</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>주방</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">욕실</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>홈의류 / 신발 / 가방</p></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li><!-- depth4 end -->
+                        <li>
+                            <div class="onedepth">
+                                <strong>BEAUTY</strong>
+                                <div class="plus_btn">
+                                    <i class="blind">BEAUTY 서브 메뉴 열기</i>
+                                    <span class="plus_line"></span>
+                                    <span class="plus_line"></span>
+                                </div>
+                            </div>
+                            <div class="twodepth_wrap">
+                                <ul class="twodepth">
+                                    <li>
+                                        <a href="#"><p>스킨</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>립</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>아이</p></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li><!-- depth5 end -->
+                    </ul>
+                </div>
+            </nav><!-- nav end -->
+        </div>
+    </header><!-- header end -->
+<!-- main start -->
+    <main id="contents">
+        <div class="story_wrap">
+            <div class="tit_wrap">
+                <h2 class="tit">Join Life Story</h2>
+                <div class="tit_img">
+                    <img src="./images/join/visual_join.jpg" alt="Join Life Story">
+                </div>
+                <p class="tit_txt">
+                    ZARA에게 <i class="strog">JOIN LIFE</i>는 
+                    가장 지속 가능한 모델을 향해, 무엇을 해야 하는지 끊임없이 질문하고 개선하는 과정을 의미합니다. 그 길이 쉽지 않다는 것을 알고 있지만, 업계의 변화를 이끄는 힘을 믿습니다. 이러한 이유로 ZARA의 <i class="strog">사회적, 환경적 목표는 지속적인 개선</i>을 위해 더욱 까다로워졌습니다.
+                </p> 
+            </div>
+            <div class="tab_wrap"  id="promised">
+                <div class="tab1_wrap">
+                    <div class="tab_tit">
+                        <h3 class="tit_h3">약속</h3>
+                        <p>ZARA는 제품 제조 및 자체 활동으로 인한 환경 발자국을 줄이고, 우리가 존재하는 지역 사회의 사람들에게 긍정적인 영향을 미치기 위해 노력하면서 비즈니스 모델을 지속적으로 변화시킬 수 있는 까다로운 지속 가능성 목표를 설정했습니다.</p>
+                    </div>
+                    <div class="tab_btn_warp">
+                        <div class="tab_list_warp">
+                            <ul class="tab_btn_list">
+                                <li>
+                                    <a class="tab_btn active" id="tab_btn1" data-num="0">2023</a>
+                                </li>
+                                <li>
+                                    <a class="tab_btn" id="tab_btn2" data-num="1">2025</a>
+                                </li>
+                                <li>
+                                    <a href="#txt3" class="tab_btn" id="tab_btn3" data-num="2">2030</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab_txt">
+                            <ul id="txt1" class="tab_p active">
+                                <li>100% 면과 지속 가능한 셀룰로오스</li>
+                                <li>100% 재사용 및 재활용을 용이하게 하기 위해 재설계한 포장재 사용</li>
+                                <li>100% 고객용 일회용 플라스틱 사용 금지</li>
+                                <li>재생 또는 재활용을 위해 자체 시설에서 발생하는 폐기물 100% 수거 및 관리</li>
+                            </ul>
+                            <ul id="txt2" class="tab_p">
+                                <li>주요 시장에서 ZARA PRE-OWNED와 같은 순환 서비스 운영</li>
+                                <li>공급망에 속한 3백만 명의 근로자가 ‘근로자 중심’ 전략의 혜택을 받고 있습니다.</li>
+                                <li>100% 지속 가능한 리넨과 재활용 폴리에스터</li>
+                                <li>공급망에서 물 소비량 25% 절감</li>
+                            </ul>
+                            <ul id="txt3" class="tab_p">
+                                <li>ZARA의 탄소 배출량 50% 이상 감소</li>
+                                <li>환경에 미치는 영향이 적은 100% 섬유 원료</li>
+                                <li>5백만 헥타르의 보호, 복원 또는 재생</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab2_wrap" id="business">
+                    <div class="tab_tit">
+                        <h3 class="tit_h3">주요업적</h3>
+                        <p>20여 년 전 ZARA는 UN 글로벌 협약에 서명함으로써 지속 가능성을 위한 노력을 시작하였습니다. 
+                            그 이후로 사람과 지구 보호에 초점을 맞춘 전체적인 비전으로 프로젝트를 개발해왔습니다.</p>
+                    </div>
+                    <div class="tab_btn_warp">
+                        <div class="tab_list_warp">
+                            <ul class="tab_btn_list">
+                                <li>
+                                    <a href="#" class="tab_btn active" data-num="3">2022</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tab_btn" data-num="4">2021</a>
+                                </li>
+                                <li>
+                                    <a href="#txt5" class="tab_btn" data-num="5">2020</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab_txt">
+                            <ul class="tab_p active">
+                                <li>ZARA PRE-OWNED</li>
+                                <li>JOIN LIFE 컬렉션 50%</li>
+                                <li>사업장 내 100% 재생 가능한 전기 에너지 사용</li>
+                            </ul>
+                            <ul id="txt4" class="tab_p">
+                                <li>INTERNATIONAL ACCORD</li>
+                                <li>LEAF COALITION</li>
+                                <li>TERRA CARTA</li>
+                            </ul>
+                            <ul id="txt5" class="tab_p">
+                                <li>매장 의류 수거 프로그램 100%</li>
+                                <li>환경 효율적인 매장 100%</li>
+                                <li>산림 보호를 위한 CANOPYSTYLE 약속</li>
+                                <li>유해 화학 물질 배출 제로(ZDHC)</li>
+                                <li>GLOBAL FASHION AGENDA의 순환 디자인 교육 100%</li>
+                                <li>EURATEX 재활용 REHUB</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main><!-- main end -->
+    <footer id="footer">
+        <div class="inner">
+            <div class="footer_social">
+                <ul class="fsosial_list">
+                    <li>
+                        <a href="https://www.facebook.com/Zara">
+                            <img src="./images/common/facebook.png" alt="FACEBOOK">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/ZARA">
+                            <img src="./images/common/twiter.png" alt="TWITTER">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/zara/">
+                            <img src="./images/common/instar.png" alt="INSTAGRAM">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://pf.kakao.com/_CxeIxjl">
+                            <img src="./images/common/google.png" alt="KAKAO">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/user/zara">
+                            <img src="./images/common/yotube.png" alt="YOUTUBE">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_txt">
+                <p>&copy; ALL RIGHTS RESERVED</p>
+                <p>아이티엑스코리아 유한회사</p>
+                <p>사업자등록번호: 120-88-14733</p> 
+                <p>통신판매업신고 : 제2014-서울강남-02297</p>
+                <p>[사업자정보확인]</p>
+                <p>대표자 : ROMAY DE LA COLINA JOSE MANUEL</p>
+                <p>주소 : 서울시 강남구 영동대로 511</p>
+                <p>(삼성동, 트레이드타워 33층)</p>
+                <p>호스팅 서비스 사업자: ITX MERKEN, B.V.</p>
+                <p>대표번호: 080-479-0880</p>
+            </div>
+            <div class="footer_menu">
+                <ul class="fmenu_list">
+                    <li><a href="https://static.zara.net/static//pdfs/KR/privacy-policy/privacy-policy-ko_KR-20230726.pdf">개인정보처리방침</a></li>
+                    <li><a href="https://static.zara.net/static//pdfs/KR/terms-and-conditions/terms-and-conditions-ko_KR-20230926.pdf">이용약관</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer><!-- footer end -->
+    <div id="top">
+        <button type="button" class="top_btn">TOP</button>
+    </div>
+    <script src="./js/javascript.js"></script>
+    <script>
+        const txt=document.querySelectorAll(".tab1_wrap .tab_p")
+        const tab=document.querySelectorAll(".tab1_wrap .tab_btn")
+        const txt2=document.querySelectorAll(".tab2_wrap .tab_p")
+        const tab2=document.querySelectorAll(".tab2_wrap .tab_btn")
+        //console.log(tab)
+        tab.forEach(function(el, idx){
+          el.addEventListener("click", function(e){
+              e.preventDefault()
+            // let num=this.getAttribute("data-num")
+            for(let i=0; i<tab.length; i++){
+              txt[i].classList.remove("active")
+              tab[i].classList.remove("active")
+            }
+            txt[idx].classList.add("active")
+            this.classList.add("active")
+          })
+        })
+
+        tab2.forEach(function(el, idx){
+          el.addEventListener("click", function(e){
+              e.preventDefault()
+            // let num=this.getAttribute("data-num")
+            for(let i=0; i<tab.length; i++){
+              txt2[i].classList.remove("active")
+              tab2[i].classList.remove("active")
+            }
+            txt2[idx].classList.add("active")
+            this.classList.add("active")
+          })
+        })
+
+      </script>
+</body>
+</html>

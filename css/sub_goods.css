@@ -1,0 +1,187 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&display=swap');
+
+/* 초기화 */
+*, *::before, *::after{box-sizing: border-box;}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {margin:0;
+                        padding:0;
+                        border:0;
+                        outline:0;
+                        font-size:100%;
+                        vertical-align:baseline;
+                        background:transparent;}
+ul {list-style:none;}
+a {margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    text-decoration: none;
+    color: inherit;}
+table {border-collapse:collapse;
+        border-spacing:0;}
+input, select, button, fieldset{vertical-align:middle;
+                                border: 0;
+                                outline: 0;
+                                background: transparent;
+                                border-radius: 0;
+                                appearance: none;
+                                padding: 0;
+                                margin: 0;}
+img, video{max-width: 100%;}
+a, span, i, strong{display: inline-block;
+                    font-style: normal;
+                    font-weight: 400;}
+
+html{font-size: 10px;
+    --main:#321B14;
+    --sub:#604036;
+    --line:rgba(0,0,0,0.2); 
+    --mainfont:#3E3E3E;
+    --titfont:#040404;
+    --subfont:#757575;
+    --zaraora:#E56F4A;
+    --space10:10px;
+    --space20:20px;
+    --space30:30px;
+    --space40:40px;
+    --space50:50px;}
+.blind{position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);}
+.inner{padding: 0 20px;}
+
+body{line-height: 1.5; color: var(--mainfont);
+    font-size: 1.4rem; font-weight: 400;
+    font-family: "Pretendard", "돋움", "맑은 고딕", "Malgun Gothic", "dotum", sans-serif;}
+h1,h2,h3,h4,h5,h6{line-height: 1;}
+.str{font-weight: 700;}
+.serif{font-family: 'DM Serif Display', serif; font-weight: 400;}
+/* .tab_btn{}
+.tab_line_btn{}
+.more_btn{}
+.top_btn{}
+.hart_btn{}
+.close_btn{}
+.back_btn{}
+.form_btn{}
+.checkbox{}
+.plus_btn{}
+.minus_btn{}
+.buy_btn_wrap{}
+.buy_btn{}
+.wishi_btn{}
+.form_change{}
+.page_nation{}
+.h2_txt{}
+.tit_txt{} */ 
+/*자바 클래스*/
+
+/*메인 비주얼*/
+#contents{padding-top: 110px;}
+#contents .goods{padding-bottom: 30px;}
+#contents .goods h2{font-size: 1.8rem;}
+#contents .goods_wrap .visual img{min-width: 375px; display: block;}
+#contents .goods_wrap .v_top_txt{padding: 25px 20px 0;}
+#contents .goods_wrap .v_txt{width: 100%;}
+#contents .goods_wrap .v_review{margin-top: 15px;}
+#contents .goods_wrap .v_bottom_txt{padding: 20px 20px}
+#contents .goods_wrap .v_top_txt{display: flex; justify-content: space-between; align-items: start;}
+#contents .goods_wrap .v_top_txt .v_txt{width: 200px;}
+#contents .goods_wrap .v_top_txt .v_txt .str{font-size: 2rem; line-height: 1; margin-bottom: 15px;}
+#contents .goods_wrap .v_top_txt .v_txt p{font-size: 1.6rem; line-height: 1;}
+#contents .goods_wrap .v_top_txt .v_icon{width: 20%; display: flex;}
+#contents .goods_wrap .v_top_txt .v_icon img{width: 100%; height: 100%;}
+#contents .goods_wrap .v_bottom_txt .v_review{padding-bottom: 10px;}
+#contents .goods_wrap .v_review a{border-bottom: 1px solid var(--main);}
+/* 정보 버튼 박스*/
+#contents .plus_tab_wrap{width: 100%;}
+#contents .plus_tab_wrap .g_inner{margin: 0 20px; border: 1px solid var(--line);}
+#contents .plus_tab_wrap .button_wrap{ display: flex; padding: 10px 20px; align-items: center;
+                                        text-align: center; justify-content: space-between;}
+#contents .plus_tab_wrap .button_wrap .plus_btn{width: 30px; height: 30px;
+                                                position: relative;}
+#contents .plus_tab_wrap .button_wrap .plus_line{width: 100%; height: 1px;
+                                                background: var(--line); position: absolute;
+                                                top: 50%; left: 0;}
+#contents .plus_tab_wrap .button_wrap .plus_line2{transform: rotate(90deg);
+                                                transition: 0.3s;}
+/* #contents .plus_tab_wrap .button_wrap.on{display: ;} */
+#contents .plus_tab_wrap .button_wrap.on+ .tab_wrap{display: blocK;}
+#contents .plus_tab_wrap .button_wrap.on .plus_line2{transform: rotate(0); background: var(--line)}
+/*혼용률 박스*/
+#contents .plus_tab_wrap .tab1_wrap{display: none; border-top: 1px solid var(--line);}
+#contents .plus_tab1 .tab1_wrap{padding: 30px 20px;}
+#contents .plus_tab1 p{text-align: left;}
+#contents .plus_tab1 .str{font-size: 1.6rem; margin-bottom: 5px;}
+#contents .plus_tab1 .d_txt2{padding: 20px 0 30px;}
+#contents .plus_tab1 .d_txt3 ul{list-style-type: disc; padding: 0 20px 30px;}
+#contents .plus_tab1 .d_txt4{color: var(--subfont);}
+/*매장픽업 박스*/
+#contents .plus_tab_wrap .tab2_wrap{display:none;}
+#contents .plus_tab2 .tab_border{border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);}
+#contents .plus_tab2 .p_wrap{background: url(../images/goods/online_pickup.jpg) center center/cover; padding: 50px 0;}
+#contents .plus_tab2 .p_wrap .p_txt{color: #fff; text-align: center; font-size: 1.6rem;}
+#contents .plus_tab2 .p_wrap .p_txt .serif{font-size: 4rem; line-height: 1; margin-bottom: 10px;}
+#contents .plus_tab2 .p_top_txt{text-align: center; padding: 30px 0;}
+#contents .plus_tab2 .p_top_txt .p_txt{padding-bottom: 8px; font-size: 1.6rem;}
+#contents .plus_tab2 .str{color: var(--main);}
+#contents .plus_tab2 .p_icon{min-width: 65px; width: 26.67vw; margin: auto; padding-bottom: 30px;}
+#contents .plus_tab2 .p_top_txt .p_icon img{display: block; width: 100%;}
+#contents .plus_tab2 .p_bottom_wrap{background: #F7F7F7; padding: 30px 0;}
+#contents .plus_tab2 .p_bottom_txt{padding: 0 20px;}
+#contents .plus_tab2 .p_bottom_txt .str{font-size: 1.6rem; padding-bottom: 10px;}
+/*배송 교환 박스*/
+#contents .plus_tab_wrap .tab3_wrap{display: none; border-top: 1px solid var(--line);}
+#contents .plus_tab3 .tab3_wrap{padding: 30px 20px 0px;}
+#contents .plus_tab3 .str{font-size: 1.6rem;text-align: left;}
+#contents .plus_tab3 ul{list-style-type: disc; padding: 0 0 0 20px}
+#contents .plus_tab3 .tab3_wrap .str{margin-bottom: 5px;}
+#contents .plus_tab3 .tab3_wrap .del_tit{margin-bottom: 30px;}
+#contents .plus_tab3 .space{display: block;}
+
+/*상품이미지*/
+#contents #goods_tab #g_tab1 .g_img img{display: block; width: 100%; margin-bottom: 25px;}
+
+#contents .g_btn_wrap .g_btn_list .click.on {color: var(--main); font-weight: 700; border-bottom: 2px solid var(--main);}
+/*사이즈가이드*/
+#contents .goods_size{padding: 10px 20px 0; }
+#contents .goods_size .size_img{padding: 20px 0;}
+#contents .goods_size .size_img img{ display: block; width: 100%;}
+#contents .goods_size .size_table{padding: 30px 0;}
+#contents .goods_size .table_wrap p{width: 230px;}
+#contents .goods_size .table_wrap table{width: 335px; border: 1px solid var(--line); 
+                                        text-align: center;}
+#contents .goods_size .table_wrap th{border: 1px solid var(--line); width: 10px;}
+#contents .goods_size .table_wrap td{border: 1px solid var(--line);}
+/*리뷰*/
+#contents .goods_review{padding: 10px 20px 0;}
+#contents .goods_review .re_wrap{border-top: 1px solid var(--line);
+                                border-bottom: 1px solid var(--line); padding: 10px;
+                                margin-top: 20px;}
+#contents .goods_review .r_top_txt{display: flex;}
+#contents .goods_review .r_top_txt .star_list{display: flex; padding-right: 230px;}
+#contents .goods_review .r_bottom_txt{padding-top: 5px;}
+
+
+/*탭버튼*/
+#contents #goods_tab{width:100%; margin: 30px auto;}
+#contents .g_btn_wrap .g_btn_list{display: flex; justify-content: space-between; 
+                        border-bottom: 1px   solid rgba(0,0,0,0.3); margin-bottom: 30px;} 
+#contents .g_btn_wrap .g_btn_list li{width: calc(100%/3 - 5px); font-size: 1.6rem; color: rgba(0,0,0,0.4);}
+#contents .g_btn_wrap .g_btn_list .g_btn{display: block; text-align: center; line-height: 40px;}
+#contents.goods_tab.active{display: block;}
+#contents.g_btn_list li .g_btn.active{font-weight: 700; color: var(--main);}

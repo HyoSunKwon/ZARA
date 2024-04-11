@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+    minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>ZARA</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/new_join_userdata.css">
+</head>
+<body>
+    <main id="join" class="login_page">
+        <!-- 로그인창 html 구조 가져옴 -->
+        <div class="login_page_wrap inner">
+            <div class="row1">
+                <div class="right">
+                    <h1 class="logo_wrap">
+                        <a href="index.html">
+                            <img src="./images/common/logo.svg" alt="자라 로고 홈버튼">
+                        </a>
+                    </h1>
+                </div>
+                <div class="left">
+                    <a href="new_join.html" class="block">
+                        <div class="back_btn_wrap">
+                            <h2 class="tit">회원가입</h2>
+                            <div class="back_icon_wrap">
+                                <span class="blind">뒤로 돌아가기</span>
+                                <span class="back_icon"></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 로그인창 html 구조 끝 -->
+        <!-- 회원가입 html -->
+        <!-- 정보입력 html -->
+        <div class="join_wrap" id="user_data">
+            <div class="join_pagenation_wrap">
+                <ul class="join_pagenation">
+                    <li>본인인증/약관동의</li>
+                    <li>정보입력</li>
+                    <li>가입완료</li>
+                </ul>
+            </div>
+            <div class="form_wrap inner">
+                <form action="#">
+                    <fieldset>
+                        <div class="user_data_wrap">
+                            <div class="set">
+                                <label for="userid" class="id label_info">아이디</label>
+                                <div class="form_design flex">
+                                    <div class="left">
+                                        <input type="text" id="userid" title="아이디를 입력하세요" placeholder="6~20자 이내로 입력하세요" class="form_box user_id" required>
+                                    </div>
+                                    <div class="overlap">
+                                        <button type="button" id="overlap_btn" class="overlap_btn">중복확인</button>
+                                    </div>
+                                </div>
+                                <label for="userpw" class="pw label_info">비밀번호</label>
+                                <div class="form_design">
+                                    <div class="form_pw">
+                                        <input type="password" id="userpw" title="비밀번호를 입력하세요" placeholder="비밀번호는 8자리 이상 입력하세요" class="form_box" required>
+                                    </div>
+                                </div>
+                                <label for="userpw2" class="pw2 label_info">비밀번호 확인</label>
+                                <div class="form_design">
+                                    <div class="form_pw">
+                                        <input type="password" id="userpw2" title="비밀번호를 한번 더 입력해주세요" placeholder="비밀번호 확인" class="form_box" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user_data_wrap">
+                            <div class="set2">
+                                <label for="email" class="label_info">이메일</label>
+                                <div class="email_text">
+                                    <div class="form_design">
+                                        <div class="flex_left flex">
+                                            <input type="email" id="email" title="이메일을 입력하세요" placeholder="이메일" class="form_box email_box">
+                                            <span class="email_box email_select" id="email_sel"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_design flex">
+                                    <div class="email_list_wrap">
+                                        <select name="sel" id="email_list" class="form_box">
+                                            <option value="선택입력">선택입력</option>
+                                            <option value="naver.com">naver.com</option>
+                                            <option value="daum.net">daum.net</option>
+                                            <option value="nate.com">nate.com</option>
+                                            <option value="google.com">google.com</option>
+                                            <option value="직접입력" id="sel_txt">직접입력</option>
+                                        </select>
+                                        <div class="email_list_icon">
+                                            <span class="more_icon"></span>
+                                        </div>
+                                    </div>
+                                    <div class="overlap">
+                                        <button type="button" class="overlap_btn">중복확인</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn_box_area">
+                            <div class="btn_box_wrap">
+                                <button type="submit" id="btn_confirm" class="btn_box">확인</button>
+                            </div>
+                            <div class="btn_box_wrap">
+                                <button type="reset" class="btn_box cancle" onclick="location.href='new_login.html'">취소</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <!-- 정보입력 html end -->
+    </main><!-- main end -->
+
+    <script>
+
+        const userId=document.querySelector("#userid")
+        const userPw=document.querySelector("#userpw")
+        const userPw2=document.querySelector("#userpw2")
+        const btnConfirm=document.querySelector("#btn_confirm")
+        const email=document.querySelector("#email")
+        const emailSel=document.querySelector("#email_sel")
+        const emailList=document.querySelector("#email_list")
+        const selTxt=document.querySelector("#sel_txt")
+        let customEmailInput;
+        let overlapBtn=document.querySelectorAll(".overlap_btn")
+
+        userId.addEventListener("change",function(){
+            if(userId.value.length<6 || userId.value.length>20){
+                alert("6~20자 이내로 입력하세요");
+                userId.value="";
+                userId.focus();
+            }
+        });
+
+        userPw.addEventListener("change",function(){
+            if(userPw.value.length<8){
+                alert("비밀번호는 8자리 이상 입력하세요");
+                userPw.value="";
+                userPw.focus();
+
+            }
+        });
+
+        userPw2.addEventListener("change",function(){
+            if(userPw.value!==userPw2.value){
+                alert("암호가 다릅니다. 다시 입력하세요")
+                
+                console.log(userPw2.value)
+                userPw2.value="";
+                userPw2.focus();
+            }
+        });
+
+        email.addEventListener("change",function(){
+            if(email.value.length<3){
+                alert("이메일을 정확히 입력하세요");
+                email.value="";
+                email.focus();            
+            }
+        });
+
+        emailList.addEventListener("change", function () {
+            
+            // document.querySelector("body").style.overflowX="visible"
+            if (emailList.value === "직접입력") {
+                emailSel.innerHTML = "";
+
+                customEmailInput = document.createElement("input");
+                customEmailInput.type = "text";
+                customEmailInput.placeholder = "@ 제외 입력";
+                customEmailInput.style.fontSize="16px";
+                customEmailInput.style.color="#040404";
+
+                // input 이벤트 대신 change 이벤트를 사용합니다.
+                customEmailInput.addEventListener("change", function () {
+                    emailSel.textContent = '@' + '\u2002' + customEmailInput.value;
+                });
+
+                emailSel.appendChild(customEmailInput);
+                customEmailInput.focus();
+            } else {
+                emailSel.textContent = '@' + '\u2002' + emailList.value;
+            }
+        });
+
+
+        
+
+        btnConfirm.addEventListener("click",function(event){
+            // button type "submit" 특성 때문에 이벤트 제어 함수를 넣어줌
+            // 여기서 생각 할 수 있는점 -> 이벤트 제어를 하지 않으면 서버로 데이터가 전송되면서 웹페이지가 다시 로드되어 'new_join_complet.html'가 묻히게됨
+            event.preventDefault();
+            if(userId.value &&
+               userPw.value &&
+               userPw2.value &&
+               email.value &&
+               !(emailList.value === "선택입력") &&
+               !(emailList.value === "직접입력")) {
+               location.href = 'new_join_complet.html';
+            } else if(!userId.value) {
+                    alert("아이디를 입력하세요.");
+                    userId.focus(); // 아이디 필드로 포커스 이동
+            } else if (!userPw.value) {
+                alert("비밀번호를 입력하세요.");
+                userPw.focus(); // 비밀번호 필드로 포커스 이동
+            } else if (!userPw2.value) {
+                alert("비밀번호 확인을 입력하세요.");
+                userPw2.focus(); // 비밀번호 확인 필드로 포커스 이동
+            } else if (!email.value){
+                alert("이메일을 입력하세요.")
+                email.focus();
+            } else if (emailList.value === "선택입력"){
+                alert("나머지 이메일을 선택해주세요.")
+            } else if (emailList.value === "직접입력") {
+                if (!emailSel.textContent.trim()) {
+                    alert("나머지 이메일을 직접 입력해주세요.");
+                    customEmailInput.focus();
+                } else {
+                    location.href = 'new_join_complet.html';
+                }
+            }
+        });
+
+        overlapBtn.forEach(function(el){
+            el.addEventListener("click",function(){
+                alert("사용이 가능합니다.")
+            })
+        })
+        
+
+        // btnConfirm.addEventListener("input",color)
+
+        // function color(){
+        //     if(userId.value && userPw.value && userPw2.value){
+        //         btnConfirm.style.backgrounColor="#321B14";
+        //     }
+            
+        // }
+
+
+        // ★확인 버튼을 눌렀을때 빈 칸으로 포커스가 이동하며 알림창이 뜨는 스크립트
+            //         btnConfirm.addEventListener("click", function (event) {
+            //     // button type "submit" 특성 때문에 이벤트 제어 함수를 넣어줌
+            //     // 여기서 생각 할 수 있는점 -> 이벤트 제어를 하지 않으면 서버로 데이터가 전송되면서 웹페이지가 다시 로드되어 'new_join_complet.html'가 묻히게됨
+            //     event.preventDefault();
+
+            //     // 유효성 검사 및 포커스 설정
+            //     if (!userId.value) {
+            //         alert("아이디를 입력하세요.");
+            //         userId.focus(); // 아이디 필드로 포커스 이동
+            //     } else if (!userPw.value) {
+            //         alert("비밀번호를 입력하세요.");
+            //         userPw.focus(); // 비밀번호 필드로 포커스 이동
+            //     } else if (!userPw2.value) {
+            //         alert("비밀번호 확인을 입력하세요.");
+            //         userPw2.focus(); // 비밀번호 확인 필드로 포커스 이동
+            //     } else {
+            //         // 모든 조건이 충족되면 페이지 이동
+            //         location.href = 'new_join_complet.html';
+            //     }
+            // });
+
+        
+        // ★위에 작동되고 있는 click 이벤트의 다른 작업 방법
+            // function confirm() {
+            //     // 조건이 충족되면 페이지 이동
+            //     if (userId.value && userPw.value && userPw2.value) {
+            //         // 페이지 이동
+            //         location.href = 'new_join_complet.html';
+            //     }};
+
+            // // 버튼 클릭 시 confirm 함수 호출
+            // btnConfirm.addEventListener("click", confirm);
+
+            // const form = document.querySelector("form");
+            // form.addEventListener("submit", function (event) {
+            //     event.preventDefault(); // 기본 동작 취소
+            //     confirm(); // 폼 제출 대신 confirm 함수 호출
+            // });
+
+
+        // ★정보를 모두 입력하지 않으면 알림창이 뜨며 페이지 이동이 안되는 식
+            // 정보를 모두 작성해주세요 자바스크립트
+            // function confirm() {
+            //     // 조건이 충족되면 페이지 이동
+            //     if (!(userId.value && userPw.value && userPw2.value)) {
+            //         alert("정보를 모두 작성해주세요.");
+            //     } else {
+            //         // 페이지 이동
+            //         location.href = 'new_join_complet.html';
+            //     }};
+
+ 
+        // ★조건이 맞지 않으면 버튼이 비활성호ㅘ되며 조건이 맞을때 버튼이 활성화되며 컬러가 바뀌는 식
+            // function next() {
+                    // disabled은 비활성화가 true값임
+            //     // userId와 userPw의 값을 이용하여 논리 연산을 수행
+            //     // 만약 userId와 userPw 중 하나라도 값이 비어있다면 true가 되고,
+            //     // 둘 다 값이 존재하면 false가 됨
+            //     btnConfirm.disabled = !(userId.value && userPw.value && userPw2.value);
+
+            //     // 버튼이 활성화된 경우
+            //     if (!btnConfirm.disabled) {
+            //         btnConfirm.style.backgroundColor = '#321B14'; // 원하는 배경색으로 변경
+            //         btnConfirm.style.color = 'white'; // 원하는 텍스트 색상으로 변경
+            //     } else {
+            //         // 버튼이 비활성화된 경우
+            //         btnConfirm.style.backgroundColor = '#757575'; // 원하는 배경색으로 변경
+            //         btnConfirm.style.color = 'white'; // 원하는 텍스트 색상으로 변경
+            //     }};
+
+            // userId.addEventListener("keyup", next);
+            // userPw.addEventListener("keyup", next);
+            // userPw2.addEventListener("keyup", next);
+
+    </script>
+
+
+</body>
+</html>

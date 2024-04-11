@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+/* 초기화 */
+*, *::before, *::after{box-sizing: border-box;}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {margin:0;
+                        padding:0;
+                        border:0;
+                        outline:0;
+                        font-size:100%;
+                        vertical-align:baseline;
+                        background:transparent;}
+ul {list-style:none;}
+a {margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    text-decoration: none;
+    color: inherit;}
+table {border-collapse:collapse;
+        border-spacing:0;}
+input, select, button, fieldset{vertical-align:middle;
+                                border: 0;
+                                outline: 0;
+                                background: transparent;
+                                border-radius: 0;
+                                appearance: none;
+                                padding: 0;
+                                margin: 0;}
+img, video{max-width: 100%;}
+a, span, i, strong{display: inline-block;
+                    font-style: normal;
+                    font-weight: 400;}
+
+html{font-size: 10px;
+    --main:#321B14;
+    --sub:#604036;
+    --line:rgba(0,0,0,0.2); 
+    --mainfont:#3E3E3E;
+    --titfont:#040404;
+    --subfont:#757575;
+    --zaraora:#E56F4A;
+    --space10:10px;
+    --space20:20px;
+    --space30:30px;
+    --space40:40px;
+    --space50:50px;}
+.blind{position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);}
+.inner{padding: 0 20px;}
+
+body{line-height: 1.5; color: var(--mainfont);
+    font-size: 1.4rem; font-weight: 400;
+    font-family: "Pretendard", "돋움", "맑은 고딕", "Malgun Gothic", "dotum", sans-serif;}
+h1,h2,h3,h4,h5,h6{line-height: 1;}
+.str{font-weight: 700;}
+.serif{font-family: 'DM Serif Display', serif; font-weight: 400;}
+/* .tab_btn{}
+.tab_line_btn{}
+.more_btn{}
+.top_btn{}
+.hart_btn{}
+.close_btn{}
+.back_btn{}
+.form_btn{}
+.checkbox{}
+.plus_btn{}
+.minus_btn{}
+.buy_btn_wrap{}
+.buy_btn{}
+.wishi_btn{}
+.form_change{}
+.page_nation{}
+.h2_txt{}
+.tit_txt{} */ 
+/*자바 클래스*/
+
+/*메인 비주얼*/
+/* #contents{padding-top: 110px;} */
+#contents .story_wrap{padding: 40px 20px; margin: auto;}
+#contents .story_wrap .tit_wrap .tit{font-size: 3.5rem; text-align: center; padding: 0 0 20px;
+                                    color: var(--main);}
+#contents .story_wrap .tit_img{margin: auto; width: 100%; max-width: 425px;}
+#contents .story_wrap .tit_img img{width: 100%; display: block;}
+#contents .story_wrap .tit_wrap .strog{font-weight: 700; color: var(--sub);}
+#contents .story_wrap .tit_txt{padding: 20px 0 0; font-size: 1.6rem;}
+
+/*약속/ 주요업적*/
+#contents .story_wrap .tab_wrap {width: 335px; padding: 40px 0 20px;}
+#contents .story_wrap .tab_wrap .tit_h3{font-size: 2.4rem; color: var(--titfont); margin-bottom: 20px;}
+#contents .story_wrap .tab2_wrap{margin-top: 60px;}
+#contents .story_wrap .tab_wrap .tab_btn_list{display: flex; justify-content: space-between; margin: 15px 0;
+                                                font-size: 1.6rem; border-bottom: 1px solid rgba(0,0,0,0.2);}
+#contents .story_wrap .tab_wrap .tab_btn_list li{width: calc(100%/3 - 5px); color: rgba(0,0,0,0.4); line-height: 2;}
+#contents .story_wrap .tab_wrap .tab_btn_list li .tab_btn{display: block; text-align: center; line-height: 40px;}
+#contents .story_wrap .tab_wrap .tab_txt{background: var(--sub); padding: 20px 20px; border-radius: 10px;}
+#contents .story_wrap .tab_wrap .tab_txt .tab_p{list-style-type:disc;  display: none; color: #eaeaea;   margin: 0 15px;}
+#contents .story_wrap .tab_wrap .tab_txt .tab_p.active{display: block;}
+#contents .story_wrap .tab_wrap .tab_btn_list li .tab_btn.active{font-weight: 700; color: var(--sub);
+    border-bottom: 2px solid var(--sub);}

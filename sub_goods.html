@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+    minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>ZARA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub_goods.css">
+</head>
+<body>
+<!-- main start -->
+<header id="header">
+    <div class="header_fixed">
+        <div class="header_in header_inner">
+            <div class="logo">
+                <h1>
+                    <a href="index.html">
+                        <img src="./images/common/logo.svg" alt="ZARA 메인페이지">
+                    </a>
+                </h1>
+            </div>
+            <div class="left">
+                <div class="menu_wrap">
+                    <div class="open_menu">
+                        <strong class="blind">메뉴열기</strong>
+                        <div class="btn_line_wrap">
+                            <span class="btn_line"></span>
+                            <span class="btn_line"></span>
+                            <span class="btn_line"></span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="serch_wrap">
+                        <div>
+                            <button type="button" class="serch_btn">
+                                <img src="./images/common/serch.svg" alt="검색창">
+                            </button>
+                        </div>
+                        <div class="serch_page_wrap">
+                            <div class="row1">
+                                <div class="back_btn">
+                                    <button type="button" class="back_btn_wrap">
+                                        <span class="icon_arrow"></span>
+                                    </button>
+                                </div>
+                                <div class="serch_page_right">
+                                    <div>
+                                        <form action="#">
+                                            <fieldset>
+                                                <legend class="blind">검색창</legend>
+                                                <div class="form_txt">
+                                                    <input type="text" class="input_box" placeholder="ZARA 23FW COLLECTION OPEN" title="ZARA 23FW COLLECTION OPEN">
+                                                </div>
+                                                <div class="input_serch_btn_wrap">
+                                                    <button type="submit" class="input_serch_btn">
+                                                        <img src="./images/common/serch_subfontcolor.svg" alt="검색 아이콘" class="serch_svg">
+                                                    </button>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div><!-- row1 end -->
+                            <div>
+                                <div class="row2 bg">
+                                    <div class="row2_row space">
+                                        <strong class="tit">최근 검색어</strong>
+                                        <div class="more_delete">
+                                            <div class="close_btn_wrap">
+                                                <p class="more_delete_btn">전체삭제</p>
+                                                <div class="close_icon_wrap">
+                                                    <span class="close_icon"></span>
+                                                    <span class="close_icon"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="serch_list" id="delet">
+                                        <li>
+                                            <div>
+                                                <div class="close_btn_wrap">
+                                                    <p>트렌치코트</p>
+                                                    <div class="close_icon_wrap">
+                                                        <strong class="blind">삭제하기</strong>
+                                                        <span class="close_icon"></span>
+                                                        <span class="close_icon"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <div class="close_btn_wrap">
+                                                    <p>경량패딩</p>
+                                                    <div class="close_icon_wrap">
+                                                        <strong class="blind">삭제하기</strong>
+                                                        <span class="close_icon"></span>
+                                                        <span class="close_icon"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <div class="close_btn_wrap">
+                                                    <p>향수</p>
+                                                    <div class="close_icon_wrap">
+                                                        <strong class="blind">삭제하기</strong>
+                                                        <span class="close_icon"></span>
+                                                        <span class="close_icon"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div><!-- row2 end-->
+                                <div class="row3 bg">
+                                    <div class="row3_row">
+                                        <strong class="tit space">인기 검색어</strong>
+                                        <div class="best_serch">
+                                            <ul class="col1">
+                                                <li>
+                                                    <a href="#">
+                                                        <p class="best">01 패딩</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <p class="best">02 트렌치코트</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <p class="best">03 니트</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <p>04 맨투맨</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <p>05 원피스</p>
+                                                    </a>
+                                                </li>
+                                            </ul><!-- col1 end -->
+                                            <ul class="col2">
+                                                <li>
+                                                    <a href="#">
+                                                        <p>06 팬츠</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <p>07 셔츠</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <p>08 티셔츠</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <p>09 자라홈</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <p>10 숄더백</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div><!-- best_serch end -->
+                                    </div>
+                                </div><!-- row3 end-->
+                                <div class="row4 bg">
+                                    <div class="row4_row space">
+                                        <strong class="tit">최근 본 상품</strong>
+                                        <div class="more_btn_wrap">
+                                            <a href="#" class="more_btn"><p>더보기</p>
+                                                <div class="icon_open_wrap">
+                                                    <span class="icon_open"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="img_wrap">
+                                        <a href="sub_goods.html" class="img_list_1">
+                                            <i class="blind">워터프루프 패딩 점퍼</i>
+                                        </a>
+                                        <a href="#" class="img_list_2">
+                                            <i class="blind">트리콧 부클 스웨터</i>
+                                        </a>
+                                        <a href="#" class="img_list_3">
+                                            <i class="blind">비즈 숄더 백</i>
+                                        </a>
+                                    </div>
+                                </div><!-- row4 end-->
+                            </div>
+                        </div><!-- serch_page_wrap end -->
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div>
+                    <div class="login_wrap">
+                        <a href="new_login.html" class="login_btn">
+                            <img src="./images/common/user.svg" alt="로그인창">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="basket_wrap">
+                        <a href="#" class="basket_btn">
+                            <img src="./images/common/wishlist.svg" alt="장바구니">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div><!--header_in end-->
+        <div class="rine_banner_wrap">
+            <a href="new_join.html" class="rine_banner">회원 가입 후 첫 구매시 10% 할인</a>
+        </div>
+    </div><!-- header_fixed end -->
+    <div>
+        <nav class="nav">
+            <strong class="blind">내비게이션</strong>
+            <div class="inner">
+                <div class="gnb_header">
+                    <div class="logo">
+                        <a href="index.html" class="logo_btn">
+                            <img src="./images/common/logo.svg" alt="자라 메인">
+                        </a>
+                    </div>
+                    <div class="close_wrap">
+                        <button type="button" class="close_btn">
+                            <strong class="blind">메뉴닫기</strong>
+                            <span class="close_line"></span>
+                            <span class="close_line"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="gnb_inner">
+                <ul class="gnb">
+                    <li>
+                        <div class="onedepth">
+                            <strong>WOMEN</strong>
+                            <div class="plus_btn">
+                                <strong class="blind">WOMEN 서브 메뉴 열기</strong>
+                                <span class="plus_line"></span>
+                                <span class="plus_line"></span>
+                            </div>
+                        </div>
+                        <div class="twodepth_wrap">
+                            <ul class="twodepth">
+                                <li>
+                                    <a href="sub_goods_list.html"><p>23FW COLLECTION</p></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>BEST SELLERS</p></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>NEW</p></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>아우터</p></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>탑</p></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>바텀</p></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>원피스 / 점프수트 / 수트</p></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>슈즈 / 백</p></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>액세서리</p></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li><!-- depth1 end -->
+                    <li>
+                        <div class="onedepth">
+                            <strong>MEN</strong>
+                            <div class="plus_btn">
+                                <i class="blind">MEN 서브 메뉴 열기</i>
+                                <span class="plus_line"></span>
+                                <span class="plus_line"></span>
+                            </div>
+                        </div>
+                        <div class="twodepth_wrap">
+                            <ul class="twodepth">
+                                <li>
+                                    <a href="#"><p>23FW COLLECTION</p></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>BEST SELLERS</p></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>NEW</p></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>아우터</p></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>탑</p></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>바텀</p></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>슈즈 / 백</p></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>액세서리</p></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li><!-- depth2 end -->
+                    <li>
+                        <div class="onedepth">
+                            <strong>KIDS</strong>
+                            <div class="plus_btn">
+                                <i class="blind">KIDS 서브 메뉴 열기</i>
+                                <span class="plus_line none"></span>
+                                <span class="plus_line"></span>
+                            </div>
+                        </div>
+                        <div class="twodepth_wrap">
+                            <ul class="twodepth">
+                                <li>
+                                    <a href="#"><p>0 ~ 6개월</p></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>0 ~ 18 개월</p></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>1 ~ 6세</p></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>6 ~ 14세</p></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li><!-- depth3 end -->
+                    <li>
+                        <div class="onedepth">
+                            <strong>ZARA HOME</strong>
+                            <div class="plus_btn">
+                                <i class="blind">ZARA HOME 서브 메뉴 열기</i>
+                                <span class="plus_line"></span>
+                                <span class="plus_line"></span>
+                            </div>
+                        </div>
+                        <div class="twodepth_wrap">
+                            <ul class="twodepth">
+                                <li>
+                                    <a href="#"><p>가구</p></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>데코</p></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>침실</p></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>주방</p></a>
+                                </li>
+                                <li>
+                                    <a href="#">욕실</a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>홈의류 / 신발 / 가방</p></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li><!-- depth4 end -->
+                    <li>
+                        <div class="onedepth">
+                            <strong>BEAUTY</strong>
+                            <div class="plus_btn">
+                                <i class="blind">BEAUTY 서브 메뉴 열기</i>
+                                <span class="plus_line"></span>
+                                <span class="plus_line"></span>
+                            </div>
+                        </div>
+                        <div class="twodepth_wrap">
+                            <ul class="twodepth">
+                                <li>
+                                    <a href="#"><p>스킨</p></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>립</p></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>아이</p></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li><!-- depth5 end -->
+                </ul>
+            </div>
+        </nav><!-- nav end -->
+    </div>
+</header><!-- header end -->
+    <main id="contents">
+        <div class="goods">
+            <div class="goods_wrap">
+                <div class="visual">
+                    <img src="./images/goods/visual_01.jpg" alt="워터프루프 패딩">
+                </div>
+                <div class="v_top_txt">
+                    <div class="v_txt">
+                        <strong class="str">WATERPROOF PADDING JUMPER</strong>
+                        <p>109,000원</p>
+                        <div class="v_review">
+                            <img src="./images/common/Star.svg" alt="리뷰 별점">
+                            <a href="#g_tab3">리뷰 1건</a>
+                        </div>
+                    </div>
+                    <div class="v_icon">
+                        <button type="button">
+                            <img src="./images/common/goodshart.svg" alt="찜하기 버튼" class="hart">
+                        </button>
+                        <button type="button">
+                            <img src="./images/common/share.svg" alt="공유하기 버튼">
+                        </button>
+                    </div>
+                </div>
+                <div class="v_bottom_txt">
+                    <p>신축성 있는 끈과 스토퍼로 핏 조절이 가능한 긴소매 하이넥 점퍼. 앞면 패치 포켓. 핏 조절이 가능한 끈이 달린 밑단. 앞면 지퍼와 스냅 버튼 여밈.</p>
+                </div>
+            </div>
+            <div class="plus_tab_wrap">
+                <div class="g_inner">
+                    <div class="plus_tab1">
+                        <div class="button_wrap">
+                            <strong>혼용률, 세탁 방법 및 원산지</strong>
+                            <div class="plus_btn">
+                                <strong class="blind">정보 열기</strong>
+                                <span class="plus_line"></span>
+                                <span class="plus_line plus_line2"></span>
+                            </div>
+                        </div>
+                        <div class="tab_wrap tab1_wrap">
+                            <div class="d_txt1">
+                                <p class="str">혼용률</p>
+                                <p>ZARA는 제품에 대한 사회적, 환경적, 안전 및 건강 관련 표준을 준수하기 위해 모니터링 프로그램을 운영합니다. 규정 준수 여부를 평가하기 위해 감사 프로그램과 지속적인 개선 계획을 개발하였습니다.</p>
+                            </div>
+                            <div class="d_txt2">
+                                <p class="str">겉감</p>
+                                <p>필요할 때만 옷을 세탁하고, 때로는 옷을 환기시키는 것으로도 충분합니다. 세탁 과정에서 서서히 직물이 마모되기 때문에 세탁 횟수를 줄이면 의류 수명을 연장하고 의류 관리 과정에서 사용되는 물과 에너지 소비를 줄일 수 있습니다.</p>
+                            </div>
+                            <div class="d_txt3">
+                                <ul>
+                                    <li>물 온도 최고 30도 손세탁 가능</li>
+                                    <li>표백제 사용 금지</li>
+                                    <li>최고 110도 다림질 가능</li>
+                                    <li>드라이클리닝 불가</li>
+                                    <li>건조기 사용 금지</li>
+                                </ul>
+                            </div>
+                            <div class="d_txt4">
+                                <p>제조국 : 중국</p>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="plus_tab2">
+                        <div class="button_wrap tab_border">
+                            <strong>매장 픽업 서비스</strong>
+                            <div class="plus_btn">
+                                <strong class="blind">정보 열기</strong>
+                                <span class="plus_line plus_line1"></span>
+                                <span class="plus_line plus_line2"></span>
+                            </div>
+                        </div>
+                        <div class="tab_wrap tab2_wrap">
+                            <div class="p_wrap">
+                                <div class="p_txt">
+                                    <p class="serif">ZARA ORA</p>
+                                    <p>자라가 선보이는 온라인 매장 픽업 서비스</p>
+                                </div>
+                            </div>
+                            <div class="p_top_txt">
+                                <div class="p_icon">
+                                    <img src="./images/goods/icon_pickup.png" alt="매장픽업서비스 아이콘">
+                                </div>
+                                <p class="p_txt">인기 상품 놓치지 말고 <span class="str">픽업서비스로 먼저 찜!</span></P>
+                                <p class="p_txt">줄 서지 않고 바로 <span class="str">기다릴 필요없이</span> 빠르게 픽업!</P>
+                                <p class="p_txt">온라인몰 혜택은 그대로 적용! <span class="str">배송비까지 0원!</span></p>
+                            </div>
+                            <div class="p_bottom_wrap">
+                                <div class="p_bottom_txt">
+                                    <p class="str">유의사항</p>
+                                    <ul>
+                                        <li>자라 오라 표기가 있는 상품에 한해 서비스 이용이 가능합니다.</li>
+                                        <li>장바구니 속 상품이 픽업서비스로 잘 이동이 되었는 지 꼭 확인 후 주문 바랍니다.</li>
+                                        <li>서비스 특성상 주문 완료시 매장은 변경 불가합니다.</li>
+                                        <li>수령 바코드는 카톡 메시지로 발송됩니다.</li>
+                                        <li>바코드 수신 후, 3일 내 매장 미방문시 주문은 자동취소 됩니다.</li>
+                                        <li>20시 이전, 주문 완료 후 준비 완료 메시지를 받은 경우에 당일 픽업이 가능합니다.</li>
+                                        <li>온라인몰 반품 절차와 동일하게 매장반품/ 택배 중에 선택하여  진행하시면 됩니다.</li>
+                                        <li>반품은 수령일로부터 15일내 온라인몰 > 마이페이지를 통해 접수 가능합니다.</li>
+                                        <li>*단, 교환/반품 사유에 따라 별도 배송비가 부과될 수 있음.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plus_tab3">
+                        <div class="button_wrap">
+                            <strong>배송, 교환 및 반품</strong>
+                            <div class="plus_btn">
+                                <strong class="blind">정보 열기</strong>
+                                <span class="plus_line"></span>
+                                <span class="plus_line plus_line2"></span>
+                            </div>
+                        </div>
+                        <div class="tab_wrap tab3_wrap">
+                            <div class="del_txt1 del_tit">
+                                <p class="str">배송</p>
+                                <p><span class="space">매장으로 배송(무료)</span>
+                                    영업일 기준 2-3일 이내 배송</p>
+                            </div>
+                            <div class="del_txt2 del_tit">
+                                <p class="str">자택 배송</p>
+                                <ul>
+                                    <li>익일 배송 4,000원</li>
+                                    <li>영업일 기준 2-3일 이내 배송 3,000원</li>
+                                    <li>할인되지 않은 제품의 경우 49,000원 이상 주문 시 배송비는 무료입니다.</li>
+                                    <li>주문에 부피가 큰 HOME 제품이 포함된 경우 이에 해당되는 배송비가 청구됩니다.</li>
+                                </ul>
+                            </div>
+                            <div class="del_txt3 del_tit">
+                                <p class="str">교환 및 환불</p>
+                                <ul>
+                                    <li>Zara.com에서 구매한 제품은 주문 출고일로부터 31일 안에 반품하실 수 있습니다.</li>
+                                    <li>ZARA 매장에서 반품(무료)</li>
+                                    <li>HOME 제품은 ZARA HOME 매장에서도 반품하실 수 있습니다.</li>
+                                    <li>자택 수거 서비스 2,900원</li>
+                                    <li>반품 비용은 반품 요청 건당 적용되며 환불 금액에서 차감됩니다.</li>
+                                </ul>
+                            </div>
+                        </div> 
+                    </div>
+                </div>  
+            </div>
+            <div id="goods_tab">
+                <div class="g_btn_wrap">
+                    <ul class="g_btn_list">
+                        <li>
+                            <a href="#g_tab1" class="g_btn click on">상품 이미지</a>
+                        </li>
+                        <li>
+                            <a href="#g_tab2" class="g_btn click">사이즈 가이드</a>
+                        </li>
+                        <li>
+                            <a href="#g_tab3" class="g_btn click">리뷰</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="g_tab_list">
+                    <div id="g_tab1">
+                        <ul class="g_img">
+                            <li>
+                                <img src="./images/goods/visual_02.jpg" alt="워터프루프 패딩01">
+                            </li>
+                            <li>
+                                <img src="./images/goods/visual_03.jpg" alt="워터프루프 패딩02">
+                            </li>
+                            <li>
+                                <img src="./images/goods/visual_04.jpg" alt="워터프루프 패딩03">
+                            </li>
+                            <li>
+                                <img src="./images/goods/visual_05.jpg" alt="워터프루프 패딩04">
+                            </li>
+                            <li>
+                                <img src="./images/goods/visual_06.jpg" alt="워터프루프 패딩05">
+                            </li>
+                            <li>
+                                <img src="./images/goods/visual_07.jpg" alt="워터프루프 패딩06">
+                            </li>
+                            <li>
+                                <img src="./images/goods/visual_08.jpg" alt="워터프루프 패딩07">
+                            </li>
+                            <li>
+                                <img src="./images/goods/visual_09.jpg" alt="워터프루프 패딩08">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="g_tab2">
+                    <div class="goods_size">
+                        <h2>사이즈 가이드</h2>
+                        <div class="size_img">
+                            <img src="./images/goods/size.png" alt="사이즈 가이드">
+                        </div>
+                        <div class="table_wrap">
+                            <p>A : 가슴 둘레 B : 앞면 길이 C : 소매 길이 D : 등 너비 E : 팔 너비</p>
+                            <div class="size_table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th></th><th>XS (KR 44)</th><th>S (KR 55)</th><th>M (KR 66)</th><th>L (KR 77)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>A</th><td>62cm</td><td>64cm</td><td>66cm</td><td>68cm</td>
+                                        </tr>
+                                        <tr>
+                                            <th>B</th><td>55cm</td><td>57cm</td><td>59cm</td><td>61cm</td>
+                                        </tr>
+                                        <tr>
+                                            <th>C</th><td>45cm</td><td>46cm</td><td>47cm</td><td>48cm</td>
+                                        </tr>
+                                        <tr>
+                                            <th>D</th><td>56cm</td><td>58cm</td><td>60cm</td><td>62cm</td>
+                                        </tr>
+                                        <tr>
+                                            <th>E</th><td>23cm</td><td>24cm</td><td>25cm</td><td>26cm</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="g_tab3">
+                    <div class="goods_review">
+                        <h2>리뷰 (1)</h2>
+                        <div class="re_wrap">
+                            <div class="r_top_txt">
+                                <ul class="star_list">
+                                    <li>
+                                        <img src="./images/common/Star.svg" alt="별점">
+                                    </li>
+                                    <li>
+                                        <img src="./images/common/Star.svg" alt="별점">
+                                    </li>
+                                    <li>
+                                        <img src="./images/common/Star.svg" alt="별점">
+                                    </li>
+                                    <li>
+                                        <img src="./images/common/Star.svg" alt="별점">
+                                    </li>
+                                    <li>
+                                        <img src="./images/common/Star.svg" alt="별점">
+                                    </li>
+                                </ul>
+                                <p class="name">UI****</p>
+                            </div>
+                            <div class="r_bottom_txt">
+                                <p>색상도 예쁘고, 꼼꼼하게 포장되어 왔어요! 사이즈는 안내대로 조금 큰 편이네요. 요즘 같이 일교차가 크고 더 추운 겨울이 오기 전에 입기 좋을 거 같아요. 겨울에는 안에 두껍게 입어야 할 거 같네요. 무엇보다 굉장히 귀엽습니다!!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main><!-- main end -->
+    <footer id="footer">
+        <div class="inner">
+            <div class="footer_social">
+                <ul class="fsosial_list">
+                    <li>
+                        <a href="https://www.facebook.com/Zara">
+                            <img src="./images/common/facebook.png" alt="FACEBOOK">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/ZARA">
+                            <img src="./images/common/twiter.png" alt="TWITTER">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/zara/">
+                            <img src="./images/common/instar.png" alt="INSTAGRAM">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://pf.kakao.com/_CxeIxjl">
+                            <img src="./images/common/google.png" alt="KAKAO">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/user/zara">
+                            <img src="./images/common/yotube.png" alt="YOUTUBE">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_txt">
+                <p>&copy; ALL RIGHTS RESERVED</p>
+                <p>아이티엑스코리아 유한회사</p>
+                <p>사업자등록번호: 120-88-14733</p> 
+                <p>통신판매업신고 : 제2014-서울강남-02297</p>
+                <p>[사업자정보확인]</p>
+                <p>대표자 : ROMAY DE LA COLINA JOSE MANUEL</p>
+                <p>주소 : 서울시 강남구 영동대로 511</p>
+                <p>(삼성동, 트레이드타워 33층)</p>
+                <p>호스팅 서비스 사업자: ITX MERKEN, B.V.</p>
+                <p>대표번호: 080-479-0880</p>
+            </div>
+            <div class="footer_menu">
+                <ul class="fmenu_list">
+                    <li><a href="https://static.zara.net/static//pdfs/KR/privacy-policy/privacy-policy-ko_KR-20230726.pdf">개인정보처리방침</a></li>
+                    <li><a href="https://static.zara.net/static//pdfs/KR/terms-and-conditions/terms-and-conditions-ko_KR-20230926.pdf">이용약관</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer><!-- footer end -->
+    <div id="top">
+        <button type="button" class="top_btn">TOP</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/javascript.js"></script>
+    <script>
+
+        let btn=document.querySelectorAll(".button_wrap")
+        let btnTxt=document.querySelectorAll(".tab_wrap")
+        // console.log(btn)
+
+        // 버튼 클릭 자바스크립트
+
+        //플러스마이너스
+        for(let n=0; n<btn.length; n++){
+            btn[n].addEventListener("click", function(){
+                if(btn[n].classList.contains("on")===false){
+                    for(let k=0; k<btn.length; k++){
+                        btn[k].classList.remove("on")
+                    }this.classList.add("on")
+                }else{
+                    btn[n].classList.remove("on")
+                }
+                // console.log(btn)
+                
+            })
+        }
+        // for(let i=0; i<btn.length; i++){
+        //     btn[i].addEventListener("click",function(){
+        //         for(let k=0; k<btnTxt.length; k++){
+        //             btnTxt[k].classList.remove("on")
+                   
+        //         }
+        //         btnTxt[i].classList.add("on")
+        //             console.log(btn)
+        //     })  
+        // }
+
+        let hartClick=document.querySelector(".hart")
+        let hartOn=true
+
+        hartClick.addEventListener("click",function(){
+    if(hartOn===true){
+        hartClick.setAttribute("src","./images/common/fullhart.svg")
+        hartOn=false
+    }else{
+        hartClick.setAttribute("src","./images/common/goodshart.svg")
+        hartOn=true
+    }
+})
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+/* 웹폰트 */
+@font-face{font-family:"Pretendard";
+    src:url("../fonts/Pretendard-Regular.woff2") format("woff2"),
+        url("../fonts/Pretendard-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;}
+
+@font-face{font-family:"Pretendard";
+    src:url("../fonts/Pretendard-Bold.woff2") format("woff2"),
+        url("../fonts/Pretendard-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;} 
+
+
+html{font-size: 10px;
+    --main:#321B14;
+    --sub:#604036;
+    --line: rgba(0,0,0,0.2);
+    --mainfont:#3E3E3E;
+    --titfont:#040404;
+    --subfont:#757575;
+    --zaraora:#E56F4A;
+    --space10:10px;
+    --space20:20px;
+    --space30:30px;
+    --space40:40px;
+    --space50:50px;}
+
+
+
+#contents #twodepth{color:rgba(0,0,0,0.3);
+                    width: 100%;
+                    padding: 10px 20px;
+                    border-bottom: 1px solid rgba(0,0,0,0.2);
+                    font-family: "Pretendard", "돋움", "맑은 고딕", "Malgun Gothic", "dotum", sans-serif;
+                    font-size: 1.4rem;}
+
+#contents #twodepth .click.on{color: var(--main); font-weight: 700;}
+#contents #twodepth .tabmenu_wrap_swiper .swiper-slide.big{ width: 150px;
+                                                            text-align: center;}
+#contents #twodepth .tabmenu_wrap_swiper .swiper-slide.small{ width: 80px;
+                                                                text-align: center;}
+#contents #twodepth .sub_goods_list_tabmenu a{display: block;
+                                            color: rgba(0,0,0,0.4);}
+#contents #goods_list .goods_list_wrap{display: none;}
+#contents #goods_list .goods_list_wrap.on{display: block;}
+/* #contents #goods_list .goods_list_wrap.on .item_list_area{display: block;} */
+
+#contents #goods_list .breadcrumb{font-size: 14px;
+                                color: var(--subfont);
+                                padding-top: 30px;}
+#contents #goods_list .row{display: flex;
+                            justify-content: space-between;
+                            align-items: center;}
+#contents #goods_list .tit{font-size: 24px;
+                            font-weight: 700;
+                            padding-bottom: 30px;}
+#contents #goods_list .filter_wrap{display: flex;
+                                    align-items: center;
+                                    width: 100%;}
+#contents #goods_list .filter_icon{width: 18px;
+                                margin-right: 5px;}
+#contents #goods_list .filter_icon img{width: 100%;
+                                      display: block;}
+#contents #goods_list .filter_wrap p{line-height: 1px;
+                                    color: var(--subfont);}
+#contents #goods_list .item_list_wrap{display: flex;
+                                    width: 100%;
+                                    justify-content: space-between;
+                                    flex-wrap: wrap;}
+#contents #goods_list .item_list_wrap .list{width: 47.5%;
+                                            position: relative;
+                                            padding-bottom: 30px}
+#contents #goods_list .item_list_wrap .item{width: 100%;}
+#contents #goods_list .item_list_wrap .img_wrap{position: relative;
+                                                margin-bottom: 10px;}
+#contents #goods_list .item_list_wrap .text>h4{padding-bottom: 3px;}
+#contents #goods_list .item_list_wrap .hart_icon_wrap{position: absolute;
+                                                    right: 3%;
+                                                    top: 2%;
+                                                    width: 25px;}
+#contents #goods_list .item_list_wrap .hart_icon_wrap img{display: block;
+                                                        width: 100%;}
+#contents #goods_list .item_list_area{display: none;}
+#contents #goods_list .item_list_area.on{display: block;}
+#contents #goods_list .pagenation_wrap{width: 100%;
+                                        padding-bottom: 30px;}                                                      
+#contents #goods_list .pagenation{display: flex;
+                                justify-content: center;
+                                margin: 0 auto;}
+#contents #goods_list .pagenation li .page_btn{display: block;
+                                            color: rgba(0,0,0,0.3);
+                                            padding-right: 10px;
+                                            font-family: "Pretendard", "돋움", "맑은 고딕", "Malgun Gothic", "dotum", sans-serif;}
+#contents #goods_list .pagenation li .page_btn.on{color: var(--main);
+                                                font-weight: 700;}
+#contents #goods_list .pagenation li .page_btn::after{content: "";
+                                                    border-right: 1px solid var(--line);
+                                                    padding-right: 10px;}
+#contents #goods_list .pagenation li:last-child>button::after{display: none;}

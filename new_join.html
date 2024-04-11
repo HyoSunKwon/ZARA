@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+    minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>ZARA</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/new_join.css">
+</head>
+<body>
+    <main id="join" class="login_page">
+        <!-- 로그인창 html 구조 가져옴 -->
+        <div class="login_page_wrap inner">
+            <div class="row1">
+                <div class="right">
+                    <h1 class="logo_wrap">
+                        <a href="index.html">
+                            <img src="./images/common/logo.svg" alt="자라 로고 홈버튼">
+                        </a>
+                    </h1>
+                </div>
+                <div class="left">
+                    <a href="new_login.html" class="block" >
+                        <div class="back_btn_wrap">
+                            <h2 class="tit">회원가입</h2>
+                            <div class="back_icon_wrap">
+                                <span class="blind">메인페이지로 돌아가기</span>
+                                <span class="back_icon"></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 로그인창 html 구조 끝 -->
+        <!-- 회원가입 html -->
+        <!-- 본인인증/약관동의 html -->
+        <div class="join_wrap none" id="user_assent">
+            <div class="join_pagenation_wrap">
+                <ul class="join_pagenation">
+                    <li>본인인증/약관동의</li>
+                    <li>정보입력</li>
+                    <li>가입완료</li>
+                </ul>
+            </div>
+            <div class="tit_wrap inner">
+                <h3 class="tit">ZARA 멤버십 가입하기</h3>
+                <p>다양한 할인 혜택과 이벤트, 보너스 쿠폰을 놓치지 마세요</p>
+            </div>
+            <div class="join_inner">
+                <div class="btn_box_wrap">
+                    <button type="button" class="btn_box">휴대폰 본인인증</button>
+                </div>
+            </div>
+            <div class="assent_wrap">
+                <div class="check_form_wrap">
+                    <form action="#">
+                        <fieldset>
+                            <div class="check_form_area">
+                                <legend class="inner">사이트 이용을 위한 약관에 동의</legend>
+                                <ul class="check_form_wrap">
+                                    <li class="check_form">
+                                        <div class="row">
+                                            <input type="checkbox" name="ch" value="모든항목" class="checkbox" id="all">
+                                            <label for="all" class="text">모든 항목에 동의</label>
+                                        </div>
+                                        <div class="row2">
+                                            <p>모든 항목에 동의는 필수 및 선택정보에 대한 동의도 포함되어 있으며, 개별적으로도 동의를 선택하실 수 있습니다. 선택항목에 대한 동의를 거부하는 경우에도 회원가입 서비스는 이용 가능합니다.</p>
+                                        </div>
+                                    </li>
+                                    <li class="check_form">
+                                        <div class="row">
+                                            <input type="checkbox" name="ch" value="필수" class="checkbox check" id="ch1">
+                                            <label for="ch1" class="text">만 14세 이상입니다(필수)*</label>
+                                        </div>
+                                        <div class="sub_text_btn">
+                                            <button type="button">보기</button>
+                                        </div>
+                                    </li>
+                                    <li class="check_form">
+                                        <div class="row">
+                                            <input type="checkbox" name="ch" value="필수" class="checkbox check" id="ch2">
+                                            <label for="ch2" class="text">개인정보의 수집 및 이용에 대한 동의(필수)*</label>
+                                        </div>
+                                        <div class="sub_text_btn">
+                                            <button type="button">보기</button>
+                                        </div>
+                                    </li>
+                                    <li class="check_form">
+                                        <div class="row">
+                                            <input type="checkbox" name="ch" value="선택" class="checkbox check" id="ch3">
+                                            <label for="ch3" class="text">개인정보의 수집 및 이용에 대한 동의(선택)</label>
+                                        </div>
+                                        <div class="sub_text_btn">
+                                            <button type="button">보기</button>
+                                        </div>
+                                    </li>
+                                    <li class="check_form">
+                                        <div class="row">
+                                            <input type="checkbox" name="ch" value="선택" class="checkbox check" id="ch4">
+                                            <label for="ch4" class="text">광고성 정보 수신에 대한 동의(선택)</label>
+                                        </div>
+                                        <div class="sub_text_btn">
+                                            <button type="button">보기</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="btn_box_area inner">
+                <div class="btn_box_wrap">
+                    <button type="button" class="btn_box" id="btn_next">확인</button>
+                </div>
+                <div class="btn_box_wrap">
+                    <button type="reset" class="btn_box cancle" onclick="location.href='new_login.html'">취소</button>
+                </div>
+            </div>
+        </div>
+        <!-- 본인인증/약관동의 html end -->
+    </main><!-- main end -->
+
+    <!-- <script src="./js/back.js"></script> -->
+    <script>
+        let allCheck=document.querySelector("#all");
+        let check=document.querySelectorAll(".check");
+        const btnNext=document.querySelector("#btn_next")
+        console.log(check)
+
+        // console.log(check)
+
+        allCheck.addEventListener("click",function(){
+            if(allCheck.checked){
+                check.forEach(function(el){
+                    el.checked=true;
+                });
+            }else{
+                check.forEach(function(el){
+                    el.checked=false;
+                });
+            }
+        });
+
+        btnNext.addEventListener("click", function () {
+            // 필수 항목만 체크된 요소를 가져오기
+            let checkedValues = Array.from(check)
+
+                .filter(function (el) {
+                    return el.value === "필수" && el.checked;
+                })
+                .map(function (el) {
+                    return el.value;
+                });
+
+            // 필수 항목이 모두 체크되었는지 확인
+            let isAllRequiredChecked = checkedValues.length === Array.from(check).filter(function (el) {
+                return el.value === "필수";
+            }).length;
+
+            if (isAllRequiredChecked) {
+                location.href = 'new_join_userdata.html';
+            } else {
+                alert("필수 항목을 모두 체크해주세요");
+            }
+        });
+        
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/* 웹폰트 */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&display=swap');
+
+/* 초기화 */
+*, *::before, *::after{box-sizing: border-box;}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {margin:0;
+                        padding:0;
+                        border:0;
+                        outline:0;
+                        font-size:100%;
+                        vertical-align:baseline;
+                        background:transparent;}
+ul {list-style:none;}
+a {margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    text-decoration: none;
+    color: inherit;}
+table {border-collapse:collapse;
+        border-spacing:0;}
+input, select, button, fieldset{vertical-align:middle;
+                                border: 0;
+                                outline: 0;
+                                background: transparent;
+                                border-radius: 0;
+                                appearance: none;
+                                padding: 0;
+                                margin: 0;}
+img, video{max-width: 100%;}
+a, span, i, strong{display: inline-block;
+                    font-style: normal;
+                    font-weight: 400;}
+
+html{font-size: 10px;
+    --main:#321B14;
+    --sub:#604036;
+    --line:rgba(0,0,0,0.2); 
+    --mainfont:#3E3E3E;
+    --titfont:#040404;
+    --subfont:#757575;
+    --zaraora:#f08a6a;
+    --space10:10px;
+    --space20:20px;
+    --space30:30px;
+    --space40:40px;
+    --space50:50px;}
+.blind{position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);}
+.inner{padding: 0 20px;}
+
+body{line-height: 1.5; color: var(--mainfont);
+    font-size: 1.4rem; font-weight: 400;
+    font-family: "Pretendard", "돋움", "맑은 고딕", "Malgun Gothic", "dotum", sans-serif;}
+h1,h2,h3,h4,h5,h6{line-height: 1;}
+
+.serif{font-family: 'DM Serif Display', serif; font-weight: 400; line-height: 1;}
+/* .tab_btn{}
+.tab_line_btn{}
+.more_btn{}
+.top_btn{}
+.hart_btn{}
+.close_btn{}
+.back_btn{}
+.form_btn{}
+.checkbox{}
+.plus_btn{}
+.minus_btn{}
+.buy_btn_wrap{}
+.buy_btn{}
+.wishi_btn{}
+.form_change{}
+.page_nation{}
+.h2_txt{}
+.tit_txt{} */ 
+/*자바 클래스*/
+
+/*메인 비주얼*/
+/* #contents{padding-top: 110px;} */
+#contents .pick_wrap{background: #fff;}
+#contents .pick_wrap .visual_wrap{background: var(--zaraora); width: 100%;text-align: center;height: 100%;}
+#contents .top_txt{text-align: center; color: #fff;}
+#contents .top_txt .serif{font-size: 5rem; margin-bottom: 15px; padding-top: 40px;}
+#contents .top_txt p{font-size: 1.8rem; margin-bottom: 40px;}
+#contents .top_txt .space{display: block;}
+#contents .pick_visual{width: 92vw; max-width: 400px; margin: auto;  border: 1px solid rgba(255,255,255,0.6);}
+#contents .pick_visual img{width: 100%;  display: block; padding: 10px;}
+#contents .bottom_txt{color: #fff; font-size: 1.8rem; padding:   45px 50px 40px; width: 375px; margin: auto;}
+#contents .bottom_txt p{padding: 10px 0;}
+#contents .bottom_txt .big{font-size: 23px; font-weight: 700; background: #fff; color: var(--zaraora); padding: 5px 15px; border-radius: 10px; display: inline-block; max-width: 500px; margin: 6px auto; }
+
+/*how to use*/
+#contents .how_wrap{padding: 40px 20px; text-align: center;}
+#contents .how_wrap h2{font-size: 4rem; padding-bottom: 40px; color: var(--main);}
+
+#contents .box{background: #F8D4C9; border-radius: 20px; padding: 20px 0 20px 30px; display: flex;
+                margin-bottom: 20px; align-items: center;}
+#contents .box p{width: 220px; font-size: 16px; color: var(--mainfont); text-align: left;}
+#contents .box_icon{padding-right: 30px;}
+#contents .box_icon img{width: 50px; height: 50px;  display: block;}
+#contents .how_wrap .pick_txt{padding-top: 20px; font-size: 2.4rem; color: var(--sub);}
+
+/*check point*/
+#contents .check_wrap{border-top: 1px solid var(--zaraora)}
+#contents .check_wrap h2{font-size: 4rem; text-align: center; padding-top: 50px; color: var(--main);}
+#contents .check_list{padding: 40px 20px 30px;}
+#contents .check_list li{padding: 0 0 20px;}
+#contents .check_wrap .list_index{font-size: 18px; color: var(--sub); line-height: 1.5; padding-bottom: 5px;}

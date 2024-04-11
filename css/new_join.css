@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+/* 웹폰트 */
+@font-face{font-family:"Pretendard";
+    src:url("../fonts/Pretendard-Regular.woff2") format("woff2"),
+        url("../fonts/Pretendard-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;}
+
+@font-face{font-family:"Pretendard";
+    src:url("../fonts/Pretendard-Bold.woff2") format("woff2"),
+        url("../fonts/Pretendard-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;} 
+
+
+html{font-size: 10px;
+    --main:#321B14;
+    --sub:#604036;
+    --line: rgba(0,0,0,0.2);
+    --mainfont:#3E3E3E;
+    --titfont:#040404;
+    --subfont:#757575;
+    --zaraora:#E56F4A;
+    --space10:10px;
+    --space20:20px;
+    --space30:30px;
+    --space40:40px;
+    --space50:50px;}
+
+body{line-height: 1.5;
+    font-size: 1.4rem;
+    font-family: "Pretendard", "돋움", "맑은 고딕", "Malgun Gothic", "dotum", sans-serif;
+    color: var(--mainfont);
+    font-weight: 400;}
+
+button{font-family: "Pretendard", "돋움", "맑은 고딕", "Malgun Gothic", "dotum", sans-serif;}
+
+
+h1,h2,h3,h4,h5,h6{line-height: 1;}
+
+/* 로그인창 css 가져옴 */
+#join .login_page_wrap .row1{padding: 50px 0;
+                                position: relative;}
+#join .login_page_wrap .right{order: 2;
+                              width: 25%;}
+#join .login_page_wrap .right .logo_wrap{width: 83px;
+                                        position: absolute;
+                                        right: 0;
+                                        top: 50%;
+                                        transform: translateY(-50%);}
+#join .login_page_wrap .right .logo_wrap img{width: 100%;}
+#join .login_page_wrap .left{width: 30%;}
+#join .login_page_wrap .left .block{display: block;
+                                    width: 100%;}
+#join .login_page_wrap .back_btn_wrap{width: 100%;
+                                        display: flex;
+                                        align-items: center;}
+#join .login_page_wrap .back_btn_wrap .tit{order: 2;
+                                            font-size: 18px;
+                                            color: var(--main);}
+#join .login_page_wrap .back_btn_wrap .back_icon{width: 15px; height: 15px;
+                                                        border-right: 1px solid var(--main);
+                                                        border-bottom: 1px solid var(--main);
+                                                        transform: rotate(135deg); margin-left: 3px;
+                                                        display: block;
+                                                        margin-right: 3px;}
+
+/* 회원가입 본인인증/약관동의 css */
+.join_inner{padding: 0 20px;}
+#join .join_wrap .join_pagenation_wrap{border-top: 1px solid var(--line);
+                                    margin-bottom: 40px;}
+#join .join_wrap .join_pagenation{display: flex;
+                                justify-content: space-between;
+                                width: 100%;}
+#join .join_wrap .join_pagenation li{text-align: center;
+                                    display: inline-block;
+                                    padding-top: 15px;
+                                    color: var(--subfont);
+                                    position: relative;
+                                    /* width: 33.333333%; */
+                                }      
+#join .join_wrap .join_pagenation li:nth-child(1){padding-left: 20px;
+                                                    text-align: left;
+                                                    font-weight: 700;
+                                                    color: var(--titfont);}                     
+#join .join_wrap .join_pagenation li:nth-child(1):after{content: "";
+                                                        display: inline-block;
+                                                        width: 125%;
+                                                        height: 3px;
+                                                        background: var(--titfont);
+                                                        position: absolute;
+                                                        left: 0;
+                                                        top: -2px;}
+#join .join_wrap .join_pagenation li:nth-child(3){padding-right: 20px;
+                                                text-align: right;} 
+#join .join_wrap .tit_wrap .tit{font-size: 24px;
+                                font-weight: 700;
+                                color: var(--titfont);
+                                padding-bottom: 15px;}
+#join .join_wrap .tit_wrap>p{color: var(--titfont);
+                            line-height: 1;
+                            margin-bottom: 40px;}
+#join .join_wrap .btn_box_wrap{background: var(--main);
+                            width: 100%;
+                            height: 16vw;
+                            border-radius: 10px;}
+#join .join_wrap .btn_box_wrap .btn_box{text-align: center;
+                                        display: block;
+                                        width: 100%;
+                                        color: #fff;
+                                        line-height: 16vw;
+                                        font-size: 16px;
+                                        font-family: "Pretendard", "돋움", "맑은 고딕", "Malgun Gothic", "dotum", sans-serif;}
+#join .join_wrap .assent_wrap legend{font-size: 18px;
+                                    font-weight: 700;
+                                    color: var(--titfont);
+                                    padding-top: 40px;
+                                    padding-bottom: 40px;
+                                    line-height: 1;}
+#join .join_wrap .assent_wrap .check_form_wrap{color: var(--titfont);}   
+#join .join_wrap .assent_wrap .row{display: flex;
+                                    align-items: center;}
+#join .join_wrap .assent_wrap .row2{padding: 10px 20px 0 55px;}
+#join .join_wrap .assent_wrap .checkbox{border: 1px solid var(--line);
+                                        width: 25px;
+                                        height: 25px;
+                                        margin-right: 10px;
+                                        margin-left: 20px;}
+#join .join_wrap .assent_wrap .check_form{position: relative;
+                                            padding: 20px 0;
+                                            border-bottom: 1px solid rgb(0,0,0,0.1);
+                                        }
+#join .join_wrap .assent_wrap .sub_text_btn{position: absolute;
+                                            right: 0;
+                                            top: 50%;
+                                            transform: translateY(-50%);
+                                            padding-right: 20px;}
+#join .join_wrap .assent_wrap .sub_text_btn button{display: block;
+                                                    font-size: 14px;
+                                                    font-family: "Pretendard", "돋움", "맑은 고딕", "Malgun Gothic", "dotum", sans-serif;
+                                                    color: var(--titfont);}
+#join .join_wrap .btn_box_area{padding-top: 40px;
+                                padding-bottom: 40px;}
+#join .join_wrap .btn_box_area>.btn_box_wrap:nth-child(2){margin-top: 10px;
+                                                        background: #fff;
+                                                        border: 1px solid var(--main);}
+#join .join_wrap .btn_box_area .cancle{color: var(--main);}
+
+
+
+
+
+
+
+
+
+
+                                                        
+

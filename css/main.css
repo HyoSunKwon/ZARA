@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+/* 웹폰트 */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&display=swap');
+
+
+/* 초기화
+*, *::before, *::after{box-sizing: border-box;}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {margin:0;
+                        padding:0;
+                        border:0;
+                        outline:0;
+                        font-size:100%;
+                        vertical-align:baseline;
+                        background:transparent;}
+ul {list-style:none;}
+a {margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    text-decoration: none;
+    color: inherit;}
+table {border-collapse:collapse;
+        border-spacing:0;}
+input, select, button, fieldset{vertical-align:middle;
+                                border: 0;
+                                outline: 0;
+                                background: transparent;
+                                border-radius: 0;
+                                appearance: none;
+                                padding: 0;
+                                margin: 0;}
+img, video{max-width: 100%;}
+a, span, i, strong{display: inline-block;
+                    font-style: normal;
+                    font-weight: 400;}
+
+html{font-size: 10px;
+    --main:#321B14;
+    --sub:#604036;
+    --line:rgba(0,0,0,0.2); 
+    --mainfont:#3E3E3E;
+    --titfont:#040404;
+    --subfont:#757575;
+    --zaraora:#E56F4A;
+    --space10:10px;
+    --space20:20px;
+    --space30:30px;
+    --space40:40px;
+    --space50:50px;}
+.blind{position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);}
+.inner{padding: 0 20px;}
+
+body{line-height: 1.5; color: var(--mainfont);
+    font-size: 1.4rem; font-weight: 400;
+    font-family: "Pretendard", "돋움", "맑은 고딕", "Malgun Gothic", "dotum", sans-serif;}
+h1,h2,h3,h4,h5,h6{line-height: 1;} */
+
+
+/* .tab_btn{}
+.tab_line_btn{}
+.more_btn{}
+.top_btn{}
+.hart_btn{}
+.close_btn{}
+.back_btn{}
+.form_btn{}
+.checkbox{}
+.plus_btn{}
+.minus_btn{}
+.buy_btn_wrap{}
+.buy_btn{}
+.wishi_btn{}
+.form_change{}
+.page_nation{}
+.h2_txt{}
+.tit_txt{} */ 
+
+/*메인 롤링배너*/
+/* #contents{} */
+
+#contents .main_rolling{min-height: 500px;}
+
+#contents .roll_slide .visual{width:100%; height: 100%; position: relative;}
+#contents .roll_slide .visual li{ background-repeat: no-repeat; background-position: center top;
+    background-size: cover; height: 100%;}
+#contents .roll_slide .visual a{width: 100%;}
+#contents .roll_slide .visual .slide1{background-image: url(../images/main/visual_01.jpg);}
+#contents .roll_slide .visual .slide2{background-image: url(../images/main/visual_02.jpg);}
+#contents .roll_slide .visual .slide3{background-image: url(../images/main/visual_03.jpg);}
+#contents .roll_slide .visual .roll_txt{padding: 70vw 5.33vw 30vw; text-align: left; font-size: 1.6rem; margin-top: 100px;
+                                        color: #fff;}      
+#contents .roll_slide .visual .roll_txt h2{font-size: 3rem; font-weight: 700; width: 265px; padding-bottom: 3.67vw; line-height: 1.2;}
+#contents .roll_slide .visual .roll_txt h2 .roll_space{font-size: 3rem; font-weight: 700;}
+#contents .roll_slide .visual .slide1 .roll_txt, .slide3 .roll_txt{width: 90.67vw;}
+ 
+/*메인 베스트셀러*/
+#contents .main_best{ padding: 40px 20px;}
+#contents .main_best h2{font-size: 2.4rem; font-weight: 700;}
+
+#contents .main_tbtn_wrap{padding: 20px 0;
+                        width: 100%; height: 100%;}
+#contents .tbtn_wrap{border: 1px solid var(--line); border-radius: 5px; padding: 5px 10px; text-align: center; display: block; width: 100%;
+    font-family: "Pretendard", "돋움", "맑은 고딕", "Malgun Gothic", "dotum", sans-serif;}
+#contents .tbtn_wrap .tbtn{color: var(--subfont); font-size: 14px;} 
+#contents .main_tgoods_wrap .swiper-slide-active{margin-right: 5px;}
+#contents .main_tgoods_wrap{padding-bottom: 90px;
+                            width: 100%;}
+#contents .main_tgoods .tgoods{width: 40vw;
+                               height: 60vw;}
+#contents .main_tgoods .tgoods .tg_img{width: 100%; height: 100%;}
+#contents .main_best .tabmenu_wrap_swiper .swiper-slide.big{ width: 150px;
+    text-align: center;}
+#contents .main_best .tabmenu_wrap_swiper .swiper-slide.small{ width: 90px;
+        text-align: center;}
+
+
+#contents .best_list{display: none;}
+#contents .best_list.on{display: block;}
+
+
+/*메인 자라오라*/
+#contents .main_ora{background: url(../images/main/zara_ora_banner.png) no-repeat center top/cover; color: #fff;
+    text-align: center; padding: 50px 0;}
+#contents .main_ora .mora_txt .mora_tit{font-family: 'DM Serif Display', serif; font-size: 45px;
+line-height: 1;}
+#contents .main_ora .mora_txt .txt{font-size: 18px;
+                                    padding: 10px 0 15px;}
+#contents .main_ora .more_btn_wrap{margin: auto;}
+#contents .main_ora .more_btn{border: 1px solid #fff; width: 150px; padding: 5px 10px;}
+
+
+ 
+
+/*메인 멤버십*/
+#contents .main_mbship{background: var(--sub); color: #fff; padding: 8vw 0;}
+#contents .main_mbship .top{padding: 2.67vw; display: flex; justify-content:space-between;}
+#contents .main_mbship .top h2{font-size: 2.4rem;}
+/* #contents .main_mbship .top .more_btn_wrap{width: 100%;} */
+#contents .main_mbship .top .more_btn_wrap .more_btn{display: flex; align-items: center;}
+#contents .main_mbship .top .more_btn_wrap .more_btn .icon_open{width: 10px; height: 10px;
+                                                border-right: 1px solid #fff;
+                                                border-bottom: 1px solid #fff;
+                                                transform: rotate(-45deg); margin-left: 5px;
+                                                display: block;}
+
+#contents .mbship{display: flex; justify-content: space-between; padding: 10px 0;
+                    text-align: center;}
+#contents .mbship li{width: 111px;}
+#contents .mbship img{width: 60px; height: 60px;}
+
+/*메인 조인라이프*/
+#contents .main_join{padding: 5.33vw 0;}
+#contents .main_join .top{padding: 2.67vw 0; display: flex; justify-content:space-between;}
+#contents .main_join .top h2{font-size: 2.4rem; color: var(--main);}
+#contents .main_join .more_btn_wrap{text-align: right;}
+#contents .main_join .more_btn{display: flex; align-items: center;}
+#contents .main_join .more_btn .icon_open{width: 10px; height: 10px;
+                                border-right: 1px solid var(--subfont);
+                                border-bottom: 1px solid var(--subfont);
+                                transform: rotate(-45deg); margin-left: 5px;
+                                display: block;}
+#contents .join_list{padding: 2.67vw 0; display: flex; justify-content: space-between;
+                        width: 100%;}
+#contents .join_list>li{width: 48%;}
+#contents .join_list li p{text-align: left;}
+#contents .join_list li a{width: 100%;
+                         display: block;}
+#contents .join_list li a img{width: 100%; display: block;  margin-bottom: 7px;}
+
+#contents .main_best .click.on{font-weight: 700; background: var(--main);}
+#contents .main_best .click.on .tbtn{color: #fff;}
+
+
+
+/*SWIPER PLUGIN - .swiper-pagination-bullet-active*/
+#contents .roll-swiper-pagination{padding-bottom: 7vw;} 
+:root{
+    --swiper-navigation-size: 11px;
+    --swiper-theme-color: #fff;
+}
+
+#contents #best_pagination .swiper-pagination-bullet-active{background: var(--main);}

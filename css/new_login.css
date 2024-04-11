@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+/* 웹폰트 */
+@font-face{font-family:"Pretendard";
+    src:url("../fonts/Pretendard-Regular.woff2") format("woff2"),
+        url("../fonts/Pretendard-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;}
+
+@font-face{font-family:"Pretendard";
+    src:url("../fonts/Pretendard-Bold.woff2") format("woff2"),
+        url("../fonts/Pretendard-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;} 
+
+
+html{font-size: 10px;
+    --main:#321B14;
+    --sub:#604036;
+    --line: rgba(0,0,0,0.2);
+    --mainfont:#3E3E3E;
+    --titfont:#040404;
+    --subfont:#757575;
+    --zaraora:#E56F4A;
+    --space10:10px;
+    --space20:20px;
+    --space30:30px;
+    --space40:40px;
+    --space50:50px;}
+
+body{line-height: 1.5;
+    font-size: 1.4rem;
+    font-family: "Pretendard", "돋움", "맑은 고딕", "Malgun Gothic", "dotum", sans-serif;
+    color: var(--mainfont);
+    font-weight: 400;}
+
+h1,h2,h3,h4,h5,h6{line-height: 1;}
+
+#user .login_page_wrap .row1{padding: 50px 0;
+                                position: relative;}
+#user .login_page_wrap .right{order: 2;
+                              width: 25%;}
+#user .login_page_wrap .right .logo_wrap{width: 83px;
+                                        position: absolute;
+                                        right: 0;
+                                        top: 50%;
+                                        transform: translateY(-50%);}
+#user .login_page_wrap .right .logo_wrap img{width: 100%;}
+#user .login_page_wrap .left{width: 30%;}
+#user .login_page_wrap .left .block{display: block;
+                                    width: 100%;}
+#user .login_page_wrap .back_btn_wrap{width: 100%;
+                                        display: flex;
+                                        align-items: center;}
+#user .login_page_wrap .back_btn_wrap .tit{order: 2;
+                                            font-size: 18px;
+                                            color: var(--main);}
+#user .login_page_wrap .back_btn_wrap .back_icon{width: 15px; height: 15px;
+                                                        border-right: 1px solid var(--main);
+                                                        border-bottom: 1px solid var(--main);
+                                                        transform: rotate(135deg); margin-left: 3px;
+                                                        display: block;
+                                                        margin-right: 3px;}
+#user .row2 .form_design{width: 100%;
+                        height: 60px;
+                        border: 1px solid var(--line);
+                        padding: 20px 15px 15px;}
+#user .row2 .form_design .form_box{width: 100%;
+                                    height: 100%;
+                                    font-size: 18px;
+                                    opacity: 0.5;}
+#user .row2 .form_design:nth-of-type(1){margin-bottom: 15px;}
+#user .row2 .form_design .form_pw{position: relative;
+                                    width: 100%;
+                                    height: 100%;}
+#user .row2 .form_design .form_pw .eye_icon_wrap{position: absolute;
+                                                right: 0;
+                                                top: 50%;
+                                                width: 29px;
+                                                transform: translateY(-50%);}
+#user .row2 .form_design .form_pw .eye_icon_wrap img{width: 100%;
+                                                    opacity: 0.3;}
+#user .row2 .checkbox_form .checkbox_wrap{display: flex;
+                                        align-items: center;
+                                        padding: 20px 0 40px 0;}
+#user .row2 .checkbox_form .checkbox{border: 1px solid var(--line);
+                                    width: 25px;
+                                    height: 25px;
+                                    margin-right: 10px;}
+#user .row2 .checkbox_form .checkbox_wrap .text{margin-right: 18px;
+                                                color: var(--subfont);
+                                                font-size: 18px;}
+#user .row2 .form_login_design{border-radius: 10px;
+                            background: var(--main);
+                            margin-bottom: 20px;}
+#user .row2 .form_login_design .login_btn{color: #fff;
+                                        text-align: center;
+                                        width: 100%;
+                                        height: 60px;
+                                        font-size: 16px;
+                                        font-family: "Pretendard", "돋움", "맑은 고딕", "Malgun Gothic", "dotum", sans-serif;}
+#user .row3{position: relative;
+            color: var(--subfont);}
+#user .row3 .row3_left .text_wrap{display: flex;}
+#user .row3 .row3_left .text_wrap a{display: block;}
+#user .row3 .row3_left .text_wrap a:nth-child(2){padding-left: 10px;}
+#user .row3 .row3_left .text_wrap a:nth-child(1)::after{content: '';
+                                                        width: 1px;
+                                                        height: 14px;
+                                                        background: var(--line);
+                                                        display: inline-block;
+                                                        margin-left: 10px;
+                                                        transform: translateY(10%);}
+#user .row3 .row3_right{position: absolute;
+                        top: 0;
+                        right: 0;}
+#user .row4{width: 80%;
+            margin: 40px auto;}
+#user .row4 .social_wrap{display: flex;
+                        justify-content: space-between;
+                        align-items: center;}
+#user .row4 .social_wrap a{display: block;
+                            width: 17.33vw;}
+#user .row4 .social_wrap a img{width: 100%;
+                                display: block;}
+#user .row5 .join_btn_wrap{position: relative;}                                
+#user .row5 .join_btn_wrap{display: flex;
+                        justify-content: space-between;
+                        color: var(--subfont);}
+#user .row5 .join_btn_wrap .row5_right p{margin-right: 13px;}         
+#user .row5 .join_btn_wrap .more_icon_wrap{position: absolute;
+                                        width: 10px;
+                                        height: 10px;
+                                        border-right: 1px solid var(--subfont);
+                                        border-bottom: 1px solid var(--subfont);
+                                        transform: rotate(-45deg);
+                                        display: block;
+                                        top: 25%;
+                                        right: 0;}
+                                                        
+
