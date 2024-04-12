@@ -41,6 +41,7 @@
   </li>
   <li>HEADER
     <ul>
+      <li><a href="http://nyosun.dothome.co.kr/zara/">http://nyosun.dothome.co.kr/zara/</a></li>
       <li>최상단에 할인 안내 바를 더해 유저가 회원가입 할 수 있도록 유도했습니다.</li>
       <li>햄버거메뉴를 카테고리별로 정리하여 투댑스로 구현했습니다.</li>
       <li>검색 기능을 더해 '최근 검색어', '인기 검색어', '최근 본 상품'을 확인할 수 있도록 구현했습니다.</li>
@@ -49,6 +50,7 @@
   </li>
   <li>메인페이지
     <ul>
+      <li><a href="http://nyosun.dothome.co.kr/zara/">http://nyosun.dothome.co.kr/zara/</a></li>
       <li>비쥬얼에 사이트에서 진행하는 컨텐츠를 한눈에 보기 쉽게 스와이퍼 플러그인을 사용했습니다.</li>
       <li>'BEST SELLERS'을 추가하여 옷에 관심이 없는 사람들도 제일 잘나가고 있는 상품이 무엇인지 알기 쉽게 구현했습니다.</li>
       <li>'ZARA ORA'라는 온라인 매장 픽업 서비스 고객들의 편의성을 고려한 컨텐츠를 추가했습니다.</li>
@@ -56,28 +58,33 @@
   </li>
   <li>로그인창
     <ul>
+      <li><a href="http://nyosun.dothome.co.kr/zara/new_login.html">http://nyosun.dothome.co.kr/zara/new_login.html</a></li>
       <li>자동로그인과 아이디저장이 가능한 체크박스를 구현했습니다.</li>
       <li>소셜 로그인을 할 수 있도록 구현했습니다.</li>
     </ul>
   </li>
   <li>회원가입_본인인증/약관동의
     <ul>
+      <li><a href="http://nyosun.dothome.co.kr/zara/new_join.html">http://nyosun.dothome.co.kr/zara/new_join.html</a></li>
       <li>'모든 항목에 동의'를 체크하면 모든 체크박스가 체크될 수 있도록 구현했습니다.</li>
       <li>'모든 항목에 동의'를 체크하면 모든 체크박스가 체크될 수 있도록 구현했습니다.</li>
     </ul>
   </li>
   <li>회원가입_정보입력
     <ul>
+      <li><a href="http://nyosun.dothome.co.kr/zara/new_join_userdata.html">http://nyosun.dothome.co.kr/zara/new_join_userdata.html</a></li>
       <li>폼태그에 조건식을 걸어 양식에 맞지 않으면 다음단계로 이동할 수 없도록 구현했습니다.</li>
     </ul>
   </li>
   <li>회원가입_가입완료
     <ul>
+      <li><a href="http://nyosun.dothome.co.kr/zara/new_join_complet.html">http://nyosun.dothome.co.kr/zara/new_join_complet.html</a></li>
       <li>확실한 정보전달을 위해 아이콘과 가독성 좋은 폰트크기로 UI/UX를 고려하여 디자인했습니다.</li>
     </ul>
   </li>
   <li>서브페이지
     <ul>
+      <li><a href="http://nyosun.dothome.co.kr/zara/sub_goods_list.html">http://nyosun.dothome.co.kr/zara/sub_goods_list.html</a></li>
       <li>상단 투댑스 카테고리를 오른쪽으로 스와이프할 수 있도록 구현했습니다.</li>
       <li>'23FW COLLECTION', 'BEST SELLERS' 두가지 카테고리를 탭메뉴로 구현했습니다.</li>
       <li>상품 목록중 상품 오른쪽 상단 ♥찜하기 버튼을 구현했습니다.</li>
